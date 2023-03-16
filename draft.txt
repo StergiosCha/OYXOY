@@ -14,7 +14,19 @@ lexical semantics
 	redundancy [?]
 	named entities [?]
 	quantifiers
-	
+predicate-argument structure
+	syntactic ambiguity
+	prepositional phrases 
+	core arguments
+	alternations
+	ellipsis/implicits
+	anaphora/coreference
+	intersectivity
+		intersective
+		non-intersective
+	restrictivity
+		restrictive
+		non-restrictive
 	
 Το νερό παραείναι κρύο.
 Το νερό είναι αρκετά ζεστό.
@@ -64,5 +76,54 @@ lexical_semantics:redundancy
 entailment
 lexical_semantics:redundancy
 
-...
+Κάθε Έλληνας ντράμερ θέλει να γίνει διάσημος.
+Κάποιος Έλληνας ντράμερ θέλει να γίνει διάσημος.
+entailment
+lexical_semantics:quantifiers
+[?] monotonicity:upward_monotone
 
+Η Καλλιόπη είδε την πάπια με τα κυάλια.
+Η πάπια είχε κυάλια.
+entailment | unknown (non-entailment)
+predicate-argument_structure:syntactic_ambiguity
+
+Η Καλλιόπη είδε την πάπια με τα κυάλια.
+Η Καλλιόπη είδε την πάπια.
+entailment
+lexical_semantics:redundancy
+
+Ο Γιάννης μου έφαγε το μήλο.
+Το μήλο φαγώθηκε απο μένα.
+contradiction (non-entailment)
+predicate-argument_structure:alternation
+
+Ο Μητσοτάκης δήλωσε με στόμφο "Κύριε Χατζηκυριακίδη λάμψατε διά της απουσίας σας", λαμβάνοντας την καίρια απάντηση ¨Κι εσείς!".
+Ο Μητσοτάκης έλαμψε δια της απουσίας του.
+entailment
+predicate-argument_structure:ellipsis
+
+Ο Γιάννης δήλωσε στη Μαρία ότι του αρέσει το γάλα αμυγδάλου.
+Στη Μαρία αρέσει το γάλα αμυγδάλου.
+unknown
+predicate-argument_structure:anaphora/coreference
+
+Ο Λούο είναι Κινέζος θεωρητικός τύπων.
+Ο Λούο είνι τυποθεωρητικός.
+entailment
+predicate-argument_structure:intersectivity:intersective
+
+Ο Λούο είναι ένας θεωρητικός τύπος από την Κίνα.
+Ο Λούο είναι Κινέζος τυποθεωρητικός.
+unknown (non-entailment)
+[?] lexical_semantics
+[?] predicate-argument_structure
+
+Οι θαλάσσιοι ίπποι που ζυγίζουν έως και δύο τόνους απειλούνται άμεσα απο το λιώσιμο των πάγων.
+Οι θαλάσσιοι ίπποι απειλούνται άμεσα απο το λιώσιμο των πάγων.
+unknown (non-entailment)
+predicate-argument_structure:restrictivity:restrictive
+
+Οι θαλάσσιοι ίπποι, που ζυγίζουν έως και δύο τόνους, απειλούνται άμεσα απο το λιώσιμο των πάγων.
+Οι θαλάσσιοι ίπποι απειλούνται άμεσα απο το λιώσιμο των πάγων.
+entailment
+predicate-argument_structure:restrictivity:non-restrictive

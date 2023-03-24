@@ -49,12 +49,12 @@ knowledge/common sense
 	
 Το νερό παραείναι κρύο.
 Το νερό είναι αρκετά ζεστό.
-contradiction (non-entailment)
+contradiction
 lexical_semantics:lexical_entailment:antonymy
 
 Το καινούριο Playstation είναι ακριβό.
 Το καινούριο Playstation είναι πανάκριβο.
-unknown (non-entailment)
+unknown
 lexical_semantics:morphological_modification:intensifier
 lexial_semantics:named_entities
 
@@ -72,7 +72,7 @@ lexical_semantics:redundancy
 
 Η Αρετή εικάζει ότι η γη είναι επίπεδη.
 Η γη είναι επίπεδη.
-unknown (non-entailment) 
+unknown
 lexical_semantics:factivity:non-factive
 
 Η Νιόβη παντρεύτηκε τη Βιβή.
@@ -87,7 +87,7 @@ lexical_semantics:collectivity
 
 Ο Πέτρος άνοιξε την κονσέρβα.
 Ο Πέτρος άνοιξε την κονσέρβα με το μαχαίρι.
-unknown (non-entailment)
+unknown
 lexical_semantics:redundancy
 
 Ο Θωμάς και ο Αδάμ ψιθύριζαν δυνατά κατά τη διάρκεια της παράστασης.
@@ -103,7 +103,7 @@ monotonicity:upward_monotone [?]
 
 Η Καλλιόπη είδε την πάπια με τα κυάλια.
 Η πάπια είχε κυάλια.
-entailment | unknown (non-entailment)
+entailment | unknown
 predicate-argument_structure:syntactic_ambiguity
 
 Η Καλλιόπη είδε την πάπια με τα κυάλια.
@@ -113,7 +113,7 @@ lexical_semantics:redundancy
 
 Ο Γιάννης μου έφαγε το μήλο.
 Το μήλο φαγώθηκε απο μένα.
-contradiction (non-entailment)
+contradiction
 predicate-argument_structure:alternation
 
 Ο Μητσοτάκης δήλωσε με στόμφο "Κύριε Χατζηκυριακίδη λάμψατε διά της απουσίας σας", λαμβάνοντας την καίρια απάντηση ¨Κι εσείς!".
@@ -123,7 +123,7 @@ predicate-argument_structure:ellipsis
 
 Ο Γιάννης δήλωσε στη Μαρία ότι του αρέσει το γάλα αμυγδάλου.
 Στη Μαρία αρέσει το γάλα αμυγδάλου.
-unknown (non-entailment)
+unknown
 predicate-argument_structure:anaphora/coreference
 
 Ο Λούο είναι Κινέζος θεωρητικός τύπων.
@@ -133,13 +133,13 @@ predicate-argument_structure:intersectivity:intersective
 
 Ο Λούο είναι ένας θεωρητικός τύπος από την Κίνα.
 Ο Λούο είναι Κινέζος τυποθεωρητικός.
-unknown (non-entailment)
+unknown
 [?] lexical_semantics
 [?] predicate-argument_structure
 
 Οι θαλάσσιοι ίπποι που ζυγίζουν έως και δύο τόνους απειλούνται άμεσα απο το λιώσιμο των πάγων.
 Οι θαλάσσιοι ίπποι απειλούνται άμεσα απο το λιώσιμο των πάγων.
-unknown (non-entailment)
+unknown
 predicate-argument_structure:restrictivity:restrictive
 
 Οι θαλάσσιοι ίπποι, που ζυγίζουν έως και δύο τόνους, απειλούνται άμεσα απο το λιώσιμο των πάγων.
@@ -149,12 +149,12 @@ predicate-argument_structure:restrictivity:non-restrictive
 
 Ο Φώτης φοβάται μην δεν έρθει η Μαρία.
 Ο Φώτης φοβάται μήπως έρθει η Μαρία.
-contradiction (non-entailment)
+contradiction
 logic:propositional_structure:negation
 
 Ή θα φας το φαΐ σου ή θα'χουμε άλλα.
 Θα'χουμε άλλα.
-unknown (non-entailment)
+unknown
 logic:propositional_structure:disjunction
 
 Θα'χουμε άλλα.
@@ -164,7 +164,7 @@ logic:propositional_structure:disjunction
 
 Κανένα δεν ήθελε να δώσει κάτι.
 Κάποιο ήθελε να δώσει κάτι.
-contradiction (non-entailment)
+contradiction
 logic:propositional_stucture:negative_concord
 
 Κανένα δεν ήθελε να μη δε δώσει τίποτα.
@@ -186,12 +186,12 @@ logic:propositional_structure:conjunction
 
 Ο Χ πεινούσε τόσο πολύ που έφαγε και τα ψίχουλα.
 Η Χ έφαγε μόνο τα ψίχουλα.
-contradiction (non-entailment)
+contradiction
 logic:propositional_structure:conjunction:additive
 
 Αν η γιαγιά μου είχε ρόδες θα ήταν πατίνι.
 Η γιαγιά μου έχει ρόδες.
-unknown (non-entailment)
+unknown
 logic:propositional_structure:conditional
 
 Το συνέδριο ξεκίνησε στις 4 Ιουλίου και διήρκησε δύο ημέρες.
@@ -213,12 +213,12 @@ knowledge/common_sense:world_knowledge
 
 Ο ταξιτζής δε μιλούσε.
 Ο ταξιτζής δε μιλούσε καμία γλώσσα.
-unknown (non-entailment)
+unknown
 knowledge/common_sense:world_knowledge
 
 Αυτή η εφημερίδα είναι όσο αξιόπιστο μέσο ενημέρωσης όσο και το Κουλούρι.
 Αυτή η εφημερίδα είναι ένα αξιόπιστο μέσο ενημέρωσης.
-contradiction (non-entailment)
+contradiction
 knowledge/common_sense:world_knowledge
 
 Χιλιάδες φίλων συγκεντρώθηκαν για να αποδώσουν φόρο τιμής και να να πουν το τελευταίο αντίο στον διάσημο κλόουν.

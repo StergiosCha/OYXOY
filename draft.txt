@@ -4,22 +4,19 @@ lexical semantics
 		hypernymy
 		synonymy
 		antonymy
+		meronymy
 	morphological modification
-		intensifier
-		negation
 	factivity
 		factive
 		non-factive
-	symmetry/collectivity [?] 
-	redundancy [?]
-	named entities [?]
-	quantifiers
+	symmetry/collectivity
+	redundancy
+	fao
 predicate-argument structure
 	syntactic ambiguity
-	prepositional phrases 
 	core arguments
 	alternations
-	ellipsis/implicits
+	ellipsis
 	anaphora/coreference
 	intersectivity
 		intersective
@@ -28,23 +25,20 @@ predicate-argument structure
 		restrictive
 		non-restrictive
 logic
-	propostional_structure
+	propostional structure
 		negation
-		multiple negation [?]
-			spurious [?]
+			multiple
 		conjunction
-			additive [?]
 		disjunction
 		conditionals
 		negative concord
-		quantification [?]
+		quantification
 			universal
 			existential
+			non-standard
 		comparatives
 		temporals
-knowledge/common sense
-	world knowledge
-	common sense
+common sense/knowledge
 		
 	
 Το νερό παραείναι κρύο.
@@ -52,16 +46,21 @@ knowledge/common sense
 contradiction
 lexical_semantics:lexical_entailment:antonymy
 
+Ο Τάκης έσπασε το πόδι της καρέκλας.
+Η καρέκλα έσπασε.
+entailment
+lexical_semantics:lexical_entailment:meronymy
+predicate-argument_structure:core_arguments
+
 Το καινούριο Playstation είναι ακριβό.
 Το καινούριο Playstation είναι πανάκριβο.
 unknown
-lexical_semantics:morphological_modification:intensifier
-lexial_semantics:named_entities
+lexical_semantics:morphological_modification
 
 Τα παραδοσιακά ανάλατα τυριά είναι κατά βάση τα μαλακά λευκά τυριά.
 Τα μαλακά λευτά τυριά συνήθως δεν έχουν αλάτι.
 entailment
-lexical_semantics:morphological_modification:negation
+lexical_semantics:morphological_modification
 
 Οι παρευρισκόμενοι είδαν τον μπάτσο να χτυπάει βάναυσα ένα παιδί.
 Ο αστυνομικός χτύπησε ένα παιδί.
@@ -80,13 +79,13 @@ lexical_semantics:factivity:non-factive
 entailment
 lexical_semantics:symmetry
 
-Ο Γιώργος μάλωσε με τον Γιάνη.
-Ο Γιώργος και ο Γιανης μάλωσαν.
+Ο Αλέξης μάλωσε με τον Γιάνη.
+Ο Αλέξης και ο Γιανης μάλωσαν.
 entailment
 lexical_semantics:collectivity
 
 Ο Πέτρος άνοιξε την κονσέρβα.
-Ο Πέτρος άνοιξε την κονσέρβα με το μαχαίρι.
+Ο Πέτρος άνοιξε την κονσέρβα με τα δόντια.
 unknown
 lexical_semantics:redundancy
 
@@ -95,11 +94,21 @@ lexical_semantics:redundancy
 entailment
 lexical_semantics:redundancy
 
+Χορεύοντας σάμπα, ο Περικλής κατάφερε να γοητέψει τη Θάλια.
+Ο Περικλής γοήτεψε μόνο τη Θάλια με το χορό του.
+unknown
+lexical_semantics:fao
+
+H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και τα ψίχουλα.
+Η Περσεφόνη έφαγε μόνο τα ψίχουλα.
+contradiction
+lexical_semantics:fao
+
 Κάθε Έλληνας ντράμερ θέλει να γίνει διάσημος.
 Κάποιος Έλληνας ντράμερ θέλει να γίνει διάσημος.
 entailment
-lexical_semantics:quantifiers [?]
-monotonicity:upward_monotone [?]
+logic:propositional_structure:quantification:universal
+logic:propositional_structure:quantification:existential
 
 Η Καλλιόπη είδε την πάπια με τα κυάλια.
 Η πάπια είχε κυάλια.
@@ -130,6 +139,11 @@ predicate-argument_structure:anaphora/coreference
 Ο Λούο είνι τυποθεωρητικός.
 entailment
 predicate-argument_structure:intersectivity:intersective
+
+O Τρύφων καυχέται ότι είναι επιδέξιος χορευτής.
+Ο Τρύφων καυχιέται  είναι επιδέξιος.
+unknown
+predicate-argument_structure:intersectivity:non-intersective
 
 Ο Λούο είναι ένας θεωρητικός τύπος από την Κίνα.
 Ο Λούο είναι Κινέζος τυποθεωρητικός.
@@ -170,24 +184,19 @@ logic:propositional_stucture:negative_concord
 Κανένα δεν ήθελε να μη δε δώσει τίποτα.
 Όλα ήθελαν να δώσουν κάτι.
 entailment
-logic:propositional_stucture:multiple_negations:spurious
+logic:propositional_stucture:negation:multiple
 logic:propositional_stucture:negative_concord
 
 Κανένα δεν ήθελε να μη δώσει τίποτα.
 Όλα ήθελαν να δώσουν κάτι.
 entailment
-logic:propositional_stucture:multiple_negations
+logic:propositional_stucture:negation:multiple
 logic:propositional_stucture:negative_concord
 
 Ο Φωκίων ήθελε και την πίτα ολόκληρη και το σκύλο χορτάτο.
 Ο Φωκίων ήθελε το σκύλο χορτάτο.
 entailment
 logic:propositional_structure:conjunction
-
-Ο Χ πεινούσε τόσο πολύ που έφαγε και τα ψίχουλα.
-Η Χ έφαγε μόνο τα ψίχουλα.
-contradiction
-logic:propositional_structure:conjunction:additive
 
 Αν η γιαγιά μου είχε ρόδες θα ήταν πατίνι.
 Η γιαγιά μου έχει ρόδες.
@@ -209,19 +218,19 @@ logic:propositional_structure:comparatives
 Ο ταξιτζής δε μιλούσε καμία γλώσσα.
 Ο ταξιτζής δε μιλούσε.
 entailment
-knowledge/common_sense:world_knowledge
+common sense/knowledge
 
 Ο ταξιτζής δε μιλούσε.
 Ο ταξιτζής δε μιλούσε καμία γλώσσα.
 unknown
-knowledge/common_sense:world_knowledge
+common sense/knowledge
 
 Αυτή η εφημερίδα είναι όσο αξιόπιστο μέσο ενημέρωσης όσο και το Κουλούρι.
 Αυτή η εφημερίδα είναι ένα αξιόπιστο μέσο ενημέρωσης.
 contradiction
-knowledge/common_sense:world_knowledge
+common sense/knowledge
 
 Χιλιάδες φίλων συγκεντρώθηκαν για να αποδώσουν φόρο τιμής και να να πουν το τελευταίο αντίο στον διάσημο κλόουν.
 Ο διάσημος κλόουν απεβίωσε.
 entailment
-knowledge/common_sense:common_sense
+common sense/knowledge

@@ -1,231 +1,189 @@
-lexical semantics
-	lexical entailment
-		hyponymy
-		hypernymy
-		synonymy
-		antonymy
-		meronymy
-	morphological modification
-	factivity
-		factive
-		non-factive
-	symmetry/collectivity
-	redundancy
-	fao
-predicate-argument structure
-	syntactic ambiguity
-	core arguments
-	alternations
-	ellipsis
-	anaphora/coreference
-	intersectivity
-		intersective
-		non-intersective
-	restrictivity
-		restrictive
-		non-restrictive
-logic
-	single negation
-	multiple negation
-	conjunction
-	disjunction
-	conditionals
-	negative concord
-	quantification
-		universal
-		existential
-		non-standard
-	comparatives
-	temporals
-common sense/knowledge
-		
-	
 "Δεν ξαναπατάω εκεί, χτεσινό φαγητό μας σέρβιραν!", παραπονέθηκε ο μπαμπάς της Φανής.
 Ο μπαμπάς της Φανής δήλωσε ότι το φαγητό ήταν φρεσκομαγειρεμένο.
-contradiction
-lexical_semantics:lexical_entailment:antonymy
+Contradiction
+Lexical Semantics:Lexical Entailment:Antonymy
 
 Προσπαθώντας να κάτσει, ο Τάκης έσπασε το πόδι της καρέκλας κι έπεσε στο πάτωμα.
 Η καρέκλα έσπασε.
-entailment
-lexical_semantics:lexical_entailment:meronymy
-predicate-argument_structure:core_arguments
+Entailment
+Lexical Semantics:Lexical Entailment:Meronymy
+Predicate-Argument Structure:Core Arguments
 
 Κατά τη διάρκεια των χειμερινών μηνών, η θάλασσα παραείναι κρύα για το μέσο λουόμενο.
 Ο μέσος λουόμενος βρίσκει τη θάλασσα υπερβολικά κρύα τον χειμώνα.
-entailment
-lexical_semantics:morphological_modification
+Entailment
+Lexical Semantics:Morphological Modification
 
 Τα παραδοσιακά ανάλατα τυριά είναι κατά βάση τα μαλακά λευκά τυριά.
 Τα μαλακά λευτά τυριά συνήθως δεν έχουν αλάτι.
-entailment
-lexical_semantics:morphological_modification
+Entailment
+Lexical Semantics:Morphological Modification
 
 Οι παρευρισκόμενοι είδαν τον μπάτσο να χτυπάει βάναυσα ένα παιδί.
 Ο αστυνομικός χτύπησε ένα παιδί.
-entailment
-lexical_semantics:factivity:factive
-lexical_semantics:lexical_entailment:synonymy
-lexical_semantics:redundancy
+Entailment
+Lexical Semantics:Factivity:Factive
+Lexical Semantics:Lexical Entailment:Synonymy
+Lexical Semantics:Redundancy
 
 Οι παρευρισκόμενοι ανέφεραν ότι είδαν το όργανο της τάξης να χτυπάει βάναυσα ένα παιδί.
 Ο αστυνομικός χτύπησε ένα παιδί.
-unknown
-lexical_semantics:factivity:non-factive
-lexical_semantics:lexical_entailment:synonymy
-lexical_semantics:redundancy
+Unknown
+Lexical Semantics:Factivity:Non-Factive
+Lexical Semantics:Lexical Entailment:Synonymy
+Lexical Semantics:Redundancy
 
 Η Αρετή εικάζει ότι η γη είναι επίπεδη.
 Η γη είναι επίπεδη.
-unknown
-lexical_semantics:factivity:non-factive
+Unknown
+Lexical Semantics:Factivity:Non-Factive
 
 Η Νιόβη παντρεύτηκε τη Βιβή.
 Η Βιβή παντρεύτηκε τη Νιόβη.
-entailment
-lexical_semantics:symmetry
+Entailment
+Lexical Semantics:Symmetry
 
 Ο Αλέξης μάλωσε με τον Γιάνη.
 Ο Αλέξης και ο Γιανης μάλωσαν.
-entailment
-lexical_semantics:collectivity
+Entailment
+Lexical Semantics:Collectivity
 
 Ο Πέτρος άνοιξε την κονσέρβα.
 Ο Πέτρος άνοιξε την κονσέρβα με τα δόντια.
-unknown
-lexical_semantics:redundancy
+Unknown
+Lexical Semantics:Redundancy
 
 Ο Θωμάς και ο Αδάμ ψιθύριζαν δυνατά κατά τη διάρκεια της παράστασης.
 Ο Θωμάς και ο Αδάμ ψιθύριζαν κατά τη διάρκεια της παράστασης.
-entailment
-lexical_semantics:redundancy
+Entailment
+Lexical Semantics:Redundancy
 
 Χορεύοντας σάμπα, ο Περικλής κατάφερε να γοητέψει τη Θάλια.
 Ο Περικλής γοήτεψε μόνο τη Θάλια με το χορό του.
-unknown
-lexical_semantics:fao
+Unknown
+Lexical Semantics:FAO
 
 H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και τα ψίχουλα.
 Η Περσεφόνη έφαγε μόνο τα ψίχουλα.
-contradiction
-lexical_semantics:fao
+Contradiction
+Lexical Semantics:FAO
 
 Κάθε Έλληνας ντράμερ θέλει να γίνει διάσημος.
 Κάποιος Έλληνας ντράμερ θέλει να γίνει διάσημος.
-entailment
+Entailment
 logic:quantification:universal
 logic:quantification:existential
 
 Η Καλλιόπη είδε την πάπια με τα κυάλια.
 Η πάπια είχε κυάλια.
-entailment | unknown
-predicate-argument_structure:syntactic_ambiguity
+Entailment | Unknown
+Predicate-Argument Structure:Syntactic Ambiguity
 
 Η Καλλιόπη είδε την πάπια με τα κυάλια.
 Η Καλλιόπη είδε την πάπια.
-entailment
-lexical_semantics:redundancy
+Entailment
+Lexical Semantics:Redundancy
 
 Όσο ήμουν στην τουαλέτα, ο Γιάννης μου έφαγε το μήλο!
 Το μήλο τελικά φαγώθηκε απο μένα.
-contradiction
-predicate-argument_structure:alternation
+Contradiction
+Predicate-Argument Structure:Alternation
 
 Ο Μητσοτάκης δήλωσε με στόμφο "Κύριε Χατζηκυριακίδη λάμψατε διά της απουσίας σας", λαμβάνοντας την καίρια απάντηση ¨Κι εσείς!".
 Ο Μητσοτάκης έλαμψε δια της απουσίας του.
-entailment
-predicate-argument_structure:ellipsis
+Entailment
+Predicate-Argument Structure:Ellipsis
 
 Ο Γιάννης δήλωσε στη Μαρία ότι του αρέσει το γάλα αμυγδάλου.
 Στη Μαρία αρέσει το γάλα αμυγδάλου.
-unknown
-predicate-argument_structure:anaphora/coreference
+Unknown
+Predicate-Argument Structure:Anaphora/Coreference
 
 Ο Λούο είναι Κινέζος θεωρητικός τύπων.
 Ο Λούο είναι τυποθεωρητικός.
-entailment
-predicate-argument_structure:intersectivity:intersective
+Entailment
+Predicate-Argument Structure:Intersectivity:Intersective
 
 O Τρύφων καυχέται πως είναι επιδέξιος χορευτής.
 Ο Τρύφων καυχιέται ότι είναι επιδέξιος.
-unknown
-predicate-argument_structure:intersectivity:non-intersective
+Unknown
+Predicate-Argument Structure:intersectivity:non-intersective
 
 Οι θαλάσσιοι ίπποι που ζυγίζουν έως και δύο τόνους απειλούνται άμεσα απο το λιώσιμο των πάγων.
 Οι θαλάσσιοι ίπποι απειλούνται άμεσα απο το λιώσιμο των πάγων.
-unknown
-predicate-argument_structure:restrictivity:restrictive
+Unknown
+Predicate-Argument Structure:Restrictivity:Restrictive
 
 Οι θαλάσσιοι ίπποι, που ζυγίζουν έως και δύο τόνους, απειλούνται άμεσα απο το λιώσιμο των πάγων.
 Οι θαλάσσιοι ίπποι απειλούνται άμεσα απο το λιώσιμο των πάγων.
-entailment
-predicate-argument_structure:restrictivity:non-restrictive
+Entailment
+Predicate-Argument Structure:Restrictivity:Non-Restrictive
 
 Ο Φώτης φοβάται μην δεν έρθει η Μαρία.
 Ο Φώτης φοβάται μήπως έρθει η Μαρία.
-contradiction
-logic:single_negation
+Contradiction
+Logic:Single Negation
 
 Ή θα φας το φαΐ σου ή θα'χουμε άλλα.
 Θα'χουμε άλλα.
-unknown
-logic:disjunction
+Unknown
+Logic:Disjunction
 
 Θα'χουμε άλλα.
 Ή θα φας το φαΐ σου ή θα'χουμε άλλα.
-entailment
-logic:disjunction
+Entailment
+Logic:Disjunction
 
 Κανένα δεν ήθελε να δώσει κάτι.
 Κάποιο ήθελε να δώσει κάτι.
-contradiction
-logic:propositional_stucture:negative_concord
+Contradiction
+Logic:Propositional Structure:Negative Concord
 
 Κανένα δεν ήθελε να μη δε δώσει τίποτα.
 Όλα ήθελαν να δώσουν κάτι.
-entailment
-logic:propositional_stucture:single_negation
-logic:propositional_stucture:negative_concord
+Entailment
+Logic:Propositional Stucture:Single Negation
+Logic:Propositional Stucture:Negative Concord
 
 Κανένα δεν ήθελε να μη δώσει τίποτα.
 Όλα ήθελαν να δώσουν κάτι.
-entailment
-logic:propositional_stucture:multiple_negation
-logic:propositional_stucture:negative_concord
+Entailment
+Logic:Propositional Stucture:Multiple Negation
+Logic:Propositional Stucture:Negative Concord
 
 Ο Φωκίων ήθελε και την πίτα ολόκληρη και το σκύλο χορτάτο.
 Ο Φωκίων ήθελε το σκύλο χορτάτο.
-entailment
-logic:conjunction
+Entailment
+Logic:Conjunction
 
 Αν η γιαγιά μου είχε ρόδες θα ήταν πατίνι.
 Η γιαγιά μου έχει ρόδες.
-unknown
-logic:conditional
+Unknown
+Logic:Conditional
 
 Το συνέδριο ξεκίνησε στις 4 Ιουλίου και διήρκησε δύο ημέρες.
 Το συνέδριο έληξε στις 6 Ιουλίου.
-entailment
-logic:temporal
+Entailment
+Logic:Temporal
 
 Η Δανάη είναι ψηλότερη από το Λυκούργο και αυτός ψηλότερος από την Πηνελόπη.
 Η Δανάη είναι ψηλότερη από την Πηνελόπη.
-entailment
-predicate-argument_structure:ellipsis
-predicate-argument_structure:anaphora/coreference
-logic:comparatives
+Entailment
+Predicate-Argument Structure:Ellipsis
+Predicate-Argument Structure:Anaphora/Coreference
+Logic:Comparatives
 
 Ο ταξιτζής δε μιλούσε καμία γλώσσα.
 Ο ταξιτζής δε μιλούσε.
-entailment
-common sense/knowledge
+Entailment
+Common Sense/Knowledge
 
 Ο ταξιτζής δε μιλούσε.
 Ο ταξιτζής δε μιλούσε καμία γλώσσα.
-unknown
-common sense/knowledge
+Unknown
+Common Sense/Knowledge
 
 Χιλιάδες φίλων συγκεντρώθηκαν για να αποδώσουν φόρο τιμής και να να πουν το τελευταίο αντίο στον διάσημο κλόουν.
 Ο διάσημος κλόουν απεβίωσε.
-entailment
-common sense/knowledge
+Entailment
+Common Sense/Knowledge

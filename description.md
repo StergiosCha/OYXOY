@@ -168,7 +168,7 @@ todo
 Τα παραδοσιακά ανάλατα τυριά είναι κατά βάση τα μαλακά λευκά τυριά.
 >>
 >> **Hypothesis** <br/>
-Τα μαλακά λευτά τυριά συνήθως δεν έχουν αλάτι.
+Τα μαλακά λευκά τυριά συνήθως δεν έχουν αλάτι.
 >>
 >> ---
 >> **Labels**
@@ -247,7 +247,7 @@ todo
 Ο Αλέξης μάλωσε με τον Γιάνη.
 >>
 >> **Hypothesis** <br/>
-Ο Αλέξης και ο Γιανης μάλωσαν.
+Ο Αλέξης και ο Γιάνης μάλωσαν.
 >>
 >> ---
 >> **Labels**
@@ -329,8 +329,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> * Entailment
 >> 
 >> **Tags**
->> * logic:quantification:universal
->> * logic:quantification:existential
+>> * Logic:Quantification:Universal
+>> * Logic:Quantification:Existential
 > 
 --- 
 > Example 15

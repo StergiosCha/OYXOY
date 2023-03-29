@@ -93,8 +93,8 @@ whereas `Common Sense/Knowledge` is valid, seeing as it has no internal subcateg
 >    5. **Anaphora/Coreference**
 >    6. **Intersectivity**
 >       1. **Intersective**
->    7. **Non-Intersective**
->    8. **Restrictivity**
+>       2. **Non-Intersective**
+>    7. **Restrictivity**
 >       1. **Restrictive**
 >       2. **Non-Restrictive**
 > 3. **Logic**

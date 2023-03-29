@@ -27,6 +27,9 @@ A valid sample would look like:
 >
 > **Tags**
 > * Lexical Semantics:Lexical Entailment:Antonymy
+> 
+> **Explanation**
+> * The lexical semantics of the antonyms χτεσινό/φρεσκομαγειρεμένο are responsible for the label
 
 A sample might be characterized by multiple relevant tags:
 > **Premise** <br/>

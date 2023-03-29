@@ -87,16 +87,16 @@ whereas `Common Sense/Knowledge` is valid, seeing as it has no internal subcateg
 >    6. **FAO**
 > 2. **Predicate-Argument Structure**
 >    1. **Syntactic Ambiguity**
->       1. **Core Arguments**
->       2. **Alternations**
->       3. **Ellipsis**
->       4. **Anaphora/Coreference**
->       5. **Intersectivity**
->          1. **Intersective**
->          2. **Non-Intersective**
->       6. **Restrictivity**
->          1. **Restrictive**
->          2. **Non-Restrictive**
+>    2. **Core Arguments**
+>    3. **Alternations**
+>    4. **Ellipsis**
+>    5. **Anaphora/Coreference**
+>    6. **Intersectivity**
+>       1. **Intersective**
+>    7. **Non-Intersective**
+>    8. **Restrictivity**
+>       1. **Restrictive**
+>       2. **Non-Restrictive**
 > 3. **Logic**
 >    1. **Single Negation**
 >    2. **Multiple Negations**

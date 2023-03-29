@@ -60,11 +60,11 @@ A sample can also have multiple labels (e.g. in the presence of syntactic ambigu
 
 ---
 
-### Linguistic Categories
-Linguistic categories are organized hierarchically from least to most specific. 
+### Linguistic Tags
+Linguistic tags are organized hierarchically from least to most specific. 
 When annotating a sample, categorization must proceed all the way down to the most 
 specific entry level available; that is, `Logic:Quantification` is not a 
-valid category, because it has children categories `Universal`, `Existential` and `Non-Standard`,
+valid tag, because it has children tags `Universal`, `Existential` and `Non-Standard`,
 whereas `Common Sense/Knowledge` is valid, seeing as it has no internal subcategorization.
 
 
@@ -114,7 +114,7 @@ whereas `Common Sense/Knowledge` is valid, seeing as it has no internal subcateg
 todo
 
 ## 3. Examples
-> Example 0
+> Example 1
 >> **Premise** <br/>
 "Δεν ξαναπατάω εκεί, χτεσινό φαγητό μας σέρβιραν!", παραπονέθηκε ο μπαμπάς της Φανής.
 >>
@@ -127,8 +127,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Lexical Entailment:Antonymy
->
-> Example 1
+> 
+--- 
+> Example 2
 >> **Premise** <br/>
 Προσπαθώντας να κάτσει, ο Τάκης έσπασε το πόδι της καρέκλας κι έπεσε στο πάτωμα.
 >>
@@ -142,8 +143,9 @@ todo
 >> **Tags**
 >> * Lexical Semantics:Lexical Entailment:Meronymy
 >> * Predicate-Argument Structure:Core Arguments
->
-> Example 2
+> 
+--- 
+> Example 3
 >> **Premise** <br/>
 Κατά τη διάρκεια των χειμερινών μηνών, η θάλασσα παραείναι κρύα για το μέσο λουόμενο.
 >>
@@ -156,8 +158,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Morphological Modification
->
-> Example 3
+> 
+--- 
+> Example 4
 >> **Premise** <br/>
 Τα παραδοσιακά ανάλατα τυριά είναι κατά βάση τα μαλακά λευκά τυριά.
 >>
@@ -170,8 +173,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Morphological Modification
->
-> Example 4
+> 
+--- 
+> Example 5
 >> **Premise** <br/>
 Οι παρευρισκόμενοι είδαν τον μπάτσο να χτυπάει βάναυσα ένα παιδί.
 >>
@@ -186,8 +190,9 @@ todo
 >> * Lexical Semantics:Factivity:Factive
 >> * Lexical Semantics:Lexical Entailment:Synonymy
 >> * Lexical Semantics:Redundancy
->
-> Example 5
+> 
+--- 
+> Example 6
 >> **Premise** <br/>
 Οι παρευρισκόμενοι ανέφεραν ότι είδαν το όργανο της τάξης να χτυπάει βάναυσα ένα παιδί.
 >>
@@ -202,8 +207,9 @@ todo
 >> * Lexical Semantics:Factivity:Non-Factive
 >> * Lexical Semantics:Lexical Entailment:Synonymy
 >> * Lexical Semantics:Redundancy
->
-> Example 6
+> 
+--- 
+> Example 7
 >> **Premise** <br/>
 Η Αρετή εικάζει ότι η γη είναι επίπεδη.
 >>
@@ -216,8 +222,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Factivity:Non-Factive
->
-> Example 7
+> 
+--- 
+> Example 8
 >> **Premise** <br/>
 Η Νιόβη παντρεύτηκε τη Βιβή.
 >>
@@ -230,8 +237,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Symmetry
->
-> Example 8
+> 
+--- 
+> Example 9
 >> **Premise** <br/>
 Ο Αλέξης μάλωσε με τον Γιάνη.
 >>
@@ -244,8 +252,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Collectivity
->
-> Example 9
+> 
+--- 
+> Example 10
 >> **Premise** <br/>
 Ο Πέτρος άνοιξε την κονσέρβα.
 >>
@@ -258,8 +267,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Redundancy
->
-> Example 10
+> 
+--- 
+> Example 11
 >> **Premise** <br/>
 Ο Θωμάς και ο Αδάμ ψιθύριζαν δυνατά κατά τη διάρκεια της παράστασης.
 >>
@@ -272,8 +282,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Redundancy
->
-> Example 11
+> 
+--- 
+> Example 12
 >> **Premise** <br/>
 Χορεύοντας σάμπα, ο Περικλής κατάφερε να γοητέψει τη Θάλια.
 >>
@@ -286,8 +297,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:FAO
->
-> Example 12
+> 
+--- 
+> Example 13
 >> **Premise** <br/>
 H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και τα ψίχουλα.
 >>
@@ -300,8 +312,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> 
 >> **Tags**
 >> * Lexical Semantics:FAO
->
-> Example 13
+> 
+--- 
+> Example 14
 >> **Premise** <br/>
 Κάθε Έλληνας ντράμερ θέλει να γίνει διάσημος.
 >>
@@ -315,8 +328,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> **Tags**
 >> * logic:quantification:universal
 >> * logic:quantification:existential
->
-> Example 14
+> 
+--- 
+> Example 15
 >> **Premise** <br/>
 Η Καλλιόπη είδε την πάπια με τα κυάλια.
 >>
@@ -330,8 +344,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:Syntactic Ambiguity
->
-> Example 15
+> 
+--- 
+> Example 16
 >> **Premise** <br/>
 Η Καλλιόπη είδε την πάπια με τα κυάλια.
 >>
@@ -344,8 +359,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> 
 >> **Tags**
 >> * Lexical Semantics:Redundancy
->
-> Example 16
+> 
+--- 
+> Example 17
 >> **Premise** <br/>
 Όσο ήμουν στην τουαλέτα, ο Γιάννης μου έφαγε το μήλο!
 >>
@@ -358,8 +374,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:Alternation
->
-> Example 17
+> 
+--- 
+> Example 18
 >> **Premise** <br/>
 Ο Μητσοτάκης δήλωσε με στόμφο "Κύριε Χατζηκυριακίδη λάμψατε διά της απουσίας σας", λαμβάνοντας την καίρια απάντηση ¨Κι εσείς!".
 >>
@@ -372,8 +389,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:Ellipsis
->
-> Example 18
+> 
+--- 
+> Example 19
 >> **Premise** <br/>
 Ο Γιάννης δήλωσε στη Μαρία ότι του αρέσει το γάλα αμυγδάλου.
 >>
@@ -386,8 +404,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:Anaphora/Coreference
->
-> Example 19
+> 
+--- 
+> Example 20
 >> **Premise** <br/>
 Ο Λούο είναι Κινέζος θεωρητικός τύπων.
 >>
@@ -400,8 +419,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:Intersectivity:Intersective
->
-> Example 20
+> 
+--- 
+> Example 21
 >> **Premise** <br/>
 O Τρύφων καυχέται πως είναι επιδέξιος χορευτής.
 >>
@@ -414,8 +434,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:intersectivity:non-intersective
->
-> Example 21
+> 
+--- 
+> Example 22
 >> **Premise** <br/>
 Οι θαλάσσιοι ίπποι που ζυγίζουν έως και δύο τόνους απειλούνται άμεσα απο το λιώσιμο των πάγων.
 >>
@@ -428,8 +449,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:Restrictivity:Restrictive
->
-> Example 22
+> 
+--- 
+> Example 23
 >> **Premise** <br/>
 Οι θαλάσσιοι ίπποι, που ζυγίζουν έως και δύο τόνους, απειλούνται άμεσα απο το λιώσιμο των πάγων.
 >>
@@ -442,8 +464,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:Restrictivity:Non-Restrictive
->
-> Example 23
+> 
+--- 
+> Example 24
 >> **Premise** <br/>
 Ο Φώτης φοβάται μην δεν έρθει η Μαρία.
 >>
@@ -456,8 +479,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Logic:Single Negation
->
-> Example 24
+> 
+--- 
+> Example 25
 >> **Premise** <br/>
 Ή θα φας το φαΐ σου ή θα'χουμε άλλα.
 >>
@@ -470,8 +494,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Logic:Disjunction
->
-> Example 25
+> 
+--- 
+> Example 26
 >> **Premise** <br/>
 Θα'χουμε άλλα.
 >>
@@ -484,8 +509,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Logic:Disjunction
->
-> Example 26
+> 
+--- 
+> Example 27
 >> **Premise** <br/>
 Κανένα δεν ήθελε να δώσει κάτι.
 >>
@@ -498,8 +524,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Logic:Propositional Structure:Negative Concord
->
-> Example 27
+> 
+--- 
+> Example 28
 >> **Premise** <br/>
 Κανένα δεν ήθελε να μη δε δώσει τίποτα.
 >>
@@ -513,8 +540,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Propositional Stucture:Single Negation
 >> * Logic:Propositional Stucture:Negative Concord
->
-> Example 28
+> 
+--- 
+> Example 29
 >> **Premise** <br/>
 Κανένα δεν ήθελε να μη δώσει τίποτα.
 >>
@@ -528,8 +556,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Propositional Stucture:Multiple Negation
 >> * Logic:Propositional Stucture:Negative Concord
->
-> Example 29
+> 
+--- 
+> Example 30
 >> **Premise** <br/>
 Ο Φωκίων ήθελε και την πίτα ολόκληρη και το σκύλο χορτάτο.
 >>
@@ -542,8 +571,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Logic:Conjunction
->
-> Example 30
+> 
+--- 
+> Example 31
 >> **Premise** <br/>
 Αν η γιαγιά μου είχε ρόδες θα ήταν πατίνι.
 >>
@@ -556,8 +586,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Logic:Conditional
->
-> Example 31
+> 
+--- 
+> Example 32
 >> **Premise** <br/>
 Το συνέδριο ξεκίνησε στις 4 Ιουλίου και διήρκησε δύο ημέρες.
 >>
@@ -570,8 +601,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Logic:Temporal
->
-> Example 32
+> 
+--- 
+> Example 33
 >> **Premise** <br/>
 Η Δανάη είναι ψηλότερη από το Λυκούργο και αυτός ψηλότερος από την Πηνελόπη.
 >>
@@ -586,8 +618,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> * Predicate-Argument Structure:Ellipsis
 >> * Predicate-Argument Structure:Anaphora/Coreference
 >> * Logic:Comparatives
->
-> Example 33
+> 
+--- 
+> Example 34
 >> **Premise** <br/>
 Ο ταξιτζής δε μιλούσε καμία γλώσσα.
 >>
@@ -600,8 +633,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Common Sense/Knowledge
->
-> Example 34
+> 
+--- 
+> Example 35
 >> **Premise** <br/>
 Ο ταξιτζής δε μιλούσε.
 >>
@@ -614,8 +648,9 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Common Sense/Knowledge
->
-> Example 35
+> 
+--- 
+> Example 36
 >> **Premise** <br/>
 Χιλιάδες φίλων συγκεντρώθηκαν για να αποδώσουν φόρο τιμής και να να πουν το τελευταίο αντίο στον διάσημο κλόουν.
 >>
@@ -628,4 +663,5 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> 
 >> **Tags**
 >> * Common Sense/Knowledge
->
+> 
+--- 

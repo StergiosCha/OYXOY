@@ -45,6 +45,10 @@ A sample might be characterized by multiple relevant tags:
 > **Tags**
 > * Lexical Semantics:Lexical Entailment:Meronymy
 > * Predicate-Argument Structure:Core Arguments
+> 
+> **Explanation**
+> * The lexical semantics of meronyms (πόδι καρέκλας/καρέκλα) are responsible for the label. The Predicate-Argument Structure:Core Arguments label in this case denotes the change from a transitive to an intransitive meaning for the verb "έσπασε"
+
 
 A sample can also have multiple labels (e.g. in the presence of syntactic ambiguities):
 > **Premise** <br/>
@@ -60,7 +64,9 @@ A sample can also have multiple labels (e.g. in the presence of syntactic ambigu
 >
 > **Tags**
 > * Predicate-Argument Structure:Syntactic Ambiguity
-
+> 
+> **Explanation**
+> * The sentence is ambiguous, and depending on PP attachment, it can receive the two labels given. 
 ---
 
 ### Linguistic Tags

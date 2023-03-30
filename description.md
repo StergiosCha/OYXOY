@@ -45,10 +45,6 @@ A sample might be characterized by multiple relevant tags:
 > **Tags**
 > * Lexical Semantics:Lexical Entailment:Meronymy
 > * Predicate-Argument Structure:Core Arguments
-> 
-> **Explanation**
-> * The lexical semantics of meronyms (πόδι καρέκλας/καρέκλα) are responsible for the label. The Predicate-Argument Structure:Core Arguments label in this case denotes the change from a transitive to an intransitive meaning for the verb "έσπασε"
-
 
 A sample can also have multiple labels (e.g. in the presence of syntactic ambiguities):
 > **Premise** <br/>
@@ -64,9 +60,6 @@ A sample can also have multiple labels (e.g. in the presence of syntactic ambigu
 >
 > **Tags**
 > * Predicate-Argument Structure:Syntactic Ambiguity
-> 
-> **Explanation**
-> * The sentence is ambiguous, and depending on PP attachment, it can receive the two labels given. 
 ---
 
 ### Linguistic Tags
@@ -75,7 +68,6 @@ When annotating a sample, categorization must proceed all the way down to the mo
 specific entry level available; that is, `Logic:Quantification` is not a 
 valid tag, because it has children tags `Universal`, `Existential` and `Non-Standard`,
 whereas `Common Sense/Knowledge` is valid, seeing as it has no internal subcategorization.
-
 
 > 1. **Lexical Semantics** <br/>
 >    1. **Lexical Entailment**
@@ -168,7 +160,7 @@ Inspect [annotation_example.txt](/annotation_example.txt) for an example.
 >> * Lexical Semantics:Lexical Entailment:Antonymy
 > 
 > **Explanation**
-> * The lexical semantics of the antonyms χτεσινό/φρεσκομαγειρεμένο are responsible for the label
+> The lexical semantics of the antonyms χτεσινό/φρεσκομαγειρεμένο are responsible for the label
 
 --- 
 > Example 2
@@ -187,7 +179,7 @@ Inspect [annotation_example.txt](/annotation_example.txt) for an example.
 >> * Predicate-Argument Structure:Core Arguments
 > 
 > **Explanation**
-> * The lexical semantics of meronyms (πόδι καρέκλας/καρέκλα) are responsible for the label. The Predicate-Argument Structure:Core Arguments label in this case denotes the change from a transitive to an intransitive meaning for the verb "έσπασε"
+> The lexical semantics of meronyms (πόδι καρέκλας/καρέκλα) are responsible for the label. The Predicate-Argument Structure:Core Arguments label in this case denotes the change from a transitive to an intransitive meaning for the verb "έσπασε"
 
 --- 
 > Example 3
@@ -259,7 +251,7 @@ Inspect [annotation_example.txt](/annotation_example.txt) for an example.
 >> * Lexical Semantics:Lexical Entailment:Synonymy
 >> * Lexical Semantics:Redundancy
 > 
->   **Explanation**
+> **Explanation**
 > A non-factive verb, synonymy and redundancy (dropping βάναυσα will not affect the truth conditions of the hypothesis) play a role in this example. 
 --- 
 > Example 7
@@ -294,7 +286,7 @@ Inspect [annotation_example.txt](/annotation_example.txt) for an example.
 >> * Lexical Semantics:Symmetry
 > 
 > **Explanation**
-> A verb expressing a symmetrical relation, a married b implies that b married a
+> A verb expressing a symmetrical relation, `a married b` implies that `b married a`.
 --- 
 > Example 9
 >> **Premise** <br/>
@@ -344,7 +336,7 @@ Inspect [annotation_example.txt](/annotation_example.txt) for an example.
 >> * Lexical Semantics:Redundancy
 > 
 >  **Explanation**
-> Dropping "δυνατά" does not affect the truthfulness of the sentence
+> Dropping "δυνατά" does not affect the truthfulness of the sentence.
 --- 
 > Example 12
 >> **Premise** <br/>
@@ -361,7 +353,7 @@ Inspect [annotation_example.txt](/annotation_example.txt) for an example.
 >> * Lexical Semantics:FAO
 > 
 > **Explanation**
-> FAO "mono" in the hypothesis. The premise does not imply that Pericles managed to charm Thalia only. 
+> FAO "μόνο" in the hypothesis. The premise does not imply that Pericles managed to charm Thalia only. 
 --- 
 > Example 13
 >> **Premise** <br/>
@@ -378,7 +370,7 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> * Lexical Semantics:FAO
 > 
 >  **Explanation**
-> The semantics of FAO "mono" are responsible for the contradiction here. 
+> The semantics of FAO "μόνο" are responsible for the contradiction here. 
 --- 
 > Example 14
 >> **Premise** <br/>
@@ -414,7 +406,7 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> * Predicate-Argument Structure:Syntactic Ambiguity
 > 
 > **Explanation**
-> Multiple labels due to different possibilities of PP attachment
+> Multiple labels due to different possibilities of PP attachment.
 --- 
 > Example 16
 >> **Premise** <br/>
@@ -431,7 +423,7 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> * Lexical Semantics:Redundancy
 > 
 > **Explanation**
-> Dropping the PP "με τα κυάλια" does not affect truthfulness
+> Dropping the PP "με τα κυάλια" does not affect truthfulness.
 --- 
 > Example 17
 >> **Premise** <br/>
@@ -448,7 +440,7 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> * Predicate-Argument Structure:Alternation
 > 
 > **Explanation**
-> Passive alternation (plus ethical dative clitic vs by-phrase)
+> Passive alternation (plus ethical dative clitic vs by-phrase).
 --- 
 > Example 18
 >> **Premise** <br/>
@@ -463,7 +455,9 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> 
 >> **Tags**
 >> * Predicate-Argument Structure:Ellipsis
-> 
+>
+> **Explanation**
+> Τι να πεις τώρα εδώ..
 --- 
 > Example 19
 >> **Premise** <br/>
@@ -479,6 +473,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> **Tags**
 >> * Predicate-Argument Structure:Anaphora/Coreference
 > 
+> **Explanation**
+> Clitic pronoun "του" is coreferrent with "Γιάννης".
 --- 
 > Example 20
 >> **Premise** <br/>
@@ -494,6 +490,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> **Tags**
 >> * Predicate-Argument Structure:Intersectivity:Intersective
 > 
+> **Explanation**
+> Intersective adjective "Κινέζος" does not alter the truthfulness of the premise.
 --- 
 > Example 21
 >> **Premise** <br/>
@@ -507,8 +505,10 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> * Unknown
 >> 
 >> **Tags**
->> * Predicate-Argument Structure:intersectivity:non-intersective
+>> * Predicate-Argument Structure:Intersectivity:Non-Intersective
 > 
+> **Explanation**
+> Non-intersective adjective "επιδέξιος" -- an "επιδέξιος χορευτής" is not necessarily "επιδέξιος".
 --- 
 > Example 22
 >> **Premise** <br/>
@@ -524,6 +524,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Predicate-Argument Structure:Restrictivity:Restrictive
 > 
+> **Explanation**
+> Restrictive relative clause; only walruses weighting up to 2 tons are endangered.
 --- 
 > Example 23
 >> **Premise** <br/>
@@ -539,6 +541,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Predicate-Argument Structure:Restrictivity:Non-Restrictive
 > 
+> **Explanation**
+> Non-restrictive relative clause; all walruses are endangered, and they can coincidentally weight up to 2 tons.
 --- 
 > Example 24
 >> **Premise** <br/>
@@ -554,6 +558,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Single Negation
 > 
+> **Explanation**
+> The apparent double negation "μην δεν" is spurious, and Fotis can either worry that Maria comes, or that she doesn't.
 --- 
 > Example 25
 >> **Premise** <br/>
@@ -569,6 +575,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Disjunction
 > 
+> **Explanation**
+> Cannot infer the truthfulness of any single coordinate of a true disjunction.
 --- 
 > Example 26
 >> **Premise** <br/>
@@ -584,6 +592,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Disjunction
 > 
+> **Explanation**
+> From a true statement, one can weaken it by a disjunction with an arbitrary statement.
 --- 
 > Example 27
 >> **Premise** <br/>
@@ -599,6 +609,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Propositional Structure:Negative Concord
 > 
+> **Explanation**
+> "Κανένα" and "δεν" are mutally affirming in negative concord.
 --- 
 > Example 28
 >> **Premise** <br/>
@@ -612,9 +624,11 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> * Entailment
 >> 
 >> **Tags**
->> * Logic:Propositional Stucture:Single Negation
+>> * Logic:Propositional Stucture:Multiple Negation
 >> * Logic:Propositional Stucture:Negative Concord
 > 
+> **Explanation**
+> The double negation "μη δε" is spurious (or emphatic), negates "τίποτα" and affirms "κανένα".
 --- 
 > Example 29
 >> **Premise** <br/>
@@ -631,6 +645,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> * Logic:Propositional Stucture:Multiple Negation
 >> * Logic:Propositional Stucture:Negative Concord
 > 
+> **Explanation**
+> Ditto (see above).
 --- 
 > Example 30
 >> **Premise** <br/>
@@ -646,6 +662,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Conjunction
 > 
+> **Explanation**
+> A true conjunction is true on all coordinates.
 --- 
 > Example 31
 >> **Premise** <br/>
@@ -661,6 +679,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Conditional
 > 
+> **Explanation**
+> A conditional statement allows no inference on its condition.
 --- 
 > Example 32
 >> **Premise** <br/>
@@ -676,6 +696,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Logic:Temporal
 > 
+> **Explanation**
+> 4+2=6 (μόνο μαθηματικά και πράξεις)
 --- 
 > Example 33
 >> **Premise** <br/>
@@ -693,6 +715,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> * Predicate-Argument Structure:Anaphora/Coreference
 >> * Logic:Comparatives
 > 
+> **Explanation**
+> Transitivity of comparatives, part of the sentence is ellided and "αυτός" (1-0) is coreferrent with Lycurgus.
 --- 
 > Example 34
 >> **Premise** <br/>
@@ -708,6 +732,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Common Sense/Knowledge
 > 
+> **Explanation**
+> Inability to speak any language implies inability to speak in general.
 --- 
 > Example 35
 >> **Premise** <br/>
@@ -723,6 +749,8 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Common Sense/Knowledge
 > 
+> **Explanation**
+> Not speaking does not imply inability to speak any language.
 --- 
 > Example 36
 >> **Premise** <br/>
@@ -738,4 +766,6 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 >> **Tags**
 >> * Common Sense/Knowledge
 > 
+> **Explanation**
+> Final goodbyes are said to departed entities.
 --- 

@@ -127,6 +127,7 @@ When annotating try to adhere to the following:
 * Avoid overusing the same lexical items and/or syntactic constructions. Variation is gold!
 * After having written an example, inspect it and try to see if any more labels/tags are suitable
 * Check whether flipping the elements of the pair, give you any potential interesting examples. In cases of flipping, flipping takes precedence over variation 
+* Θέλουμε να ηρεμήσετε!
 
 ### 2.2 Validation phase
 * 5 labels (1 as an example creator, 4 as just a labeler of existing examples)

@@ -120,17 +120,37 @@ whereas `Common Sense/Knowledge` is valid, seeing as it has no internal subcateg
 
 ## 2. Annotation Guidelines
 
-Each annotator should prepare a minimum of 100 examples (the more, the better!). Try to aim for a balanced annotation. Given that the multiple label annotation is rarer, we propose the following percentages: 30% for  the Entailment, Contradiction and Unknown labels, and 10% for a combination of labels. Furtermore, the annotators should also strive for a balance for each of the four main tags, i.e. approximately 25% for each major tag (Lexical Semantics, Predicate-Argument Structure, Logic, Common Sense/Knowledge), evenly distributed among subcategories. 
+Annotation consists of two phases: generation and validation. 
+During generation, an annotator comes up with a number of novel examples, i.e. sentence pairs and a suggested set of inference labels and linguistic tags.
+During validation, an annotator inspects a number of sentence pairs written by another annotator, and assigns them any inference label and linguistic tag they find appropriate.
 
-### 2.1 Tips for good annotation
+### 2.1 Generation
+Each annotator should prepare a minimum of 100 examples (the more, the better!).
+The aim is to achieve a balanced inclusion of all labels and tags.
+Given that the multiple label annotation is less natural, we propose the following percentages: ~30% for a singleton `Entailment`, `Contradiction` and `Unknown` label, and 5-10% for a combination of any two labels.
+For tags, we propose including an element of each of the major categories (`Lexical Semantics`, `Predicate-Argument Structure`, `Logic` and `Common Sense/Knowledge`) in at least 25% of the overall samples.
+
+### 2.2 Validation
+Each annotator will be handed approximately 400 sentence pairs.
+For each pair, they will carefully read the two sentences, and then assign the pair a set of possible inference labels and appropriate linguistic tags.
+
+### 2.3 Tips for Good Annotation
 When annotating try to adhere to the following:
 * Avoid overusing the same lexical items and/or syntactic constructions. Variation is gold!
-* After having written an example, inspect it and try to see if any more labels/tags are suitable
-* Check whether flipping the elements of the pair, give you any potential interesting examples. In cases of flipping, flipping takes precedence over variation 
+* After having written an example, inspect it anew and try to see if any more labels/tags are suitable.
+* For certain examples, flipping the sentence pair around might lead to potentially interesting examples. In such cases, avoid lexical or syntactic variation (i.e. keep the sentences unchanged). Make sure to double check the labels and tags assigned -- it's not necessarily the case that they will carry through from the original!
 * Θέλουμε να ηρεμήσετε!
 
-### 2.2 Validation phase
-* 5 labels (1 as an example creator, 4 as just a labeler of existing examples)
+### 2.4 Annotation Format
+When writing down an example or annotating a sentence pair, make sure to adhere to the following format:
+* The first line contains the premise sentence.
+* The second line contains the hypothesis sentence.
+* The third line contains all possible inference labels, separated by a comma and a whitespace (the order doesn't matter). The first letter of each label is capitalized.
+* The following lines contain the set of fitting linguistic tags, one tag per line (the order doesn't matter).
+Each tag is specified by the most refined entry level available (e.g. we write just `Hyponymy` for `Lexical Semantics:Lexical Entailment:Hyponymy`). 
+* A blank empty line separates an example from the next one.
+
+Inspect [annotation_example.txt](/annotation_example.txt) for an example. 
 
 ## 3. Examples
 > Example 1
@@ -192,7 +212,7 @@ When annotating try to adhere to the following:
 Τα παραδοσιακά ανάλατα τυριά είναι κατά βάση τα μαλακά λευκά τυριά.
 >>
 >> **Hypothesis** <br/>
-Τα μαλακά λευτά τυριά συνήθως δεν έχουν αλάτι.
+Τα μαλακά λευκά τυριά συνήθως δεν έχουν αλάτι.
 >>
 >> ---
 >> **Labels**
@@ -281,7 +301,7 @@ When annotating try to adhere to the following:
 Ο Αλέξης μάλωσε με τον Γιάνη.
 >>
 >> **Hypothesis** <br/>
-Ο Αλέξης και ο Γιανης μάλωσαν.
+Ο Αλέξης και ο Γιάνης μάλωσαν.
 >>
 >> ---
 >> **Labels**
@@ -372,8 +392,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> * Entailment
 >> 
 >> **Tags**
->> * logic:quantification:universal
->> * logic:quantification:existential
+>> * Logic:Quantification:Universal
+>> * Logic:Quantification:Existential
 > 
 > **Explanation**
 > Both quantifiers, universal and existential, play a role in deciding the label. 
@@ -659,7 +679,7 @@ O Τρύφων καυχέται πως είναι επιδέξιος χορευ�
 --- 
 > Example 33
 >> **Premise** <br/>
-Η Δανάη είναι ψηλότερη από το Λυκούργο και αυτός ψηλότερος από την Πηνελόπη.
+Η Δανάη είναι ψηλότερη από το Λυκούργο, και αυτός από την Πηνελόπη.
 >>
 >> **Hypothesis** <br/>
 Η Δανάη είναι ψηλότερη από την Πηνελόπη.

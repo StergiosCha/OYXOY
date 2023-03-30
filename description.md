@@ -334,6 +334,8 @@ When annotating try to adhere to the following:
 >> **Tags**
 >> * Lexical Semantics:FAO
 > 
+> > **Explanation**
+> FAO "mono" in the hypothesis. The premise does not imply that Pericles managed to charm Thalia only. 
 --- 
 > Example 13
 >> **Premise** <br/>
@@ -349,6 +351,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> **Tags**
 >> * Lexical Semantics:FAO
 > 
+>  **Explanation**
+> The semantics of FAO "mono" are responsible for the contradiction here. 
 --- 
 > Example 14
 >> **Premise** <br/>
@@ -365,6 +369,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> * logic:quantification:universal
 >> * logic:quantification:existential
 > 
+> **Explanation**
+> Both quantifiers, universal and existential, play a role in deciding the label. 
 --- 
 > Example 15
 >> **Premise** <br/>
@@ -381,6 +387,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> **Tags**
 >> * Predicate-Argument Structure:Syntactic Ambiguity
 > 
+> **Explanation**
+> Multiple labels due to different possibilities of PP attachment
 --- 
 > Example 16
 >> **Premise** <br/>
@@ -396,6 +404,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> **Tags**
 >> * Lexical Semantics:Redundancy
 > 
+> **Explanation**
+> Dropping the PP "με τα κυάλια" does not affect truthfulness
 --- 
 > Example 17
 >> **Premise** <br/>

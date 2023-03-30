@@ -45,6 +45,10 @@ A sample might be characterized by multiple relevant tags:
 > **Tags**
 > * Lexical Semantics:Lexical Entailment:Meronymy
 > * Predicate-Argument Structure:Core Arguments
+> 
+> **Explanation**
+> * The lexical semantics of meronyms (πόδι καρέκλας/καρέκλα) are responsible for the label. The Predicate-Argument Structure:Core Arguments label in this case denotes the change from a transitive to an intransitive meaning for the verb "έσπασε"
+
 
 A sample can also have multiple labels (e.g. in the presence of syntactic ambiguities):
 > **Premise** <br/>
@@ -60,7 +64,9 @@ A sample can also have multiple labels (e.g. in the presence of syntactic ambigu
 >
 > **Tags**
 > * Predicate-Argument Structure:Syntactic Ambiguity
-
+> 
+> **Explanation**
+> * The sentence is ambiguous, and depending on PP attachment, it can receive the two labels given. 
 ---
 
 ### Linguistic Tags
@@ -114,7 +120,17 @@ whereas `Common Sense/Knowledge` is valid, seeing as it has no internal subcateg
 
 ## 2. Annotation Guidelines
 
-todo
+Each annotator should prepare a minimum of 100 examples (the more, the better!). Try to aim for a balanced annotation. Given that the multiple label annotation is rarer, we propose the following percentages: 30% for  the Entailment, Contradiction and Unknown labels, and 10% for a combination of labels. Furtermore, the annotators should also strive for a balance for each of the four main tags, i.e. approximately 25% for each major tag (Lexical Semantics, Predicate-Argument Structure, Logic, Common Sense/Knowledge), evenly distributed among subcategories. 
+
+### 2.1 Tips for good annotation
+When annotating try to adhere to the following:
+* Avoid overusing the same lexical items and/or syntactic constructions. Variation is gold!
+* After having written an example, inspect it and try to see if any more labels/tags are suitable
+* Check whether flipping the elements of the pair, give you any potential interesting examples. In cases of flipping, flipping takes precedence over variation 
+* Θέλουμε να ηρεμήσετε!
+
+### 2.2 Validation phase
+* 5 labels (1 as an example creator, 4 as just a labeler of existing examples)
 
 ## 3. Examples
 > Example 1
@@ -161,7 +177,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Morphological Modification
-> 
+>
+> **Explanation**
+> Morphological modification with the morpheme παρά
 --- 
 > Example 4
 >> **Premise** <br/>
@@ -177,6 +195,8 @@ todo
 >> **Tags**
 >> * Lexical Semantics:Morphological Modification
 > 
+> **Explanation**
+> Morphological negation with the "α" morpheme
 --- 
 > Example 5
 >> **Premise** <br/>
@@ -194,6 +214,8 @@ todo
 >> * Lexical Semantics:Lexical Entailment:Synonymy
 >> * Lexical Semantics:Redundancy
 > 
+> **Explanation**
+> A factive verb, synonymy and redundancy (dropping βάναυσα will not affect the truth conditions of the hypothesis) play a role in this example. 
 --- 
 > Example 6
 >> **Premise** <br/>
@@ -226,6 +248,8 @@ todo
 >> **Tags**
 >> * Lexical Semantics:Factivity:Non-Factive
 > 
+> **Explanation**
+> Non-factive verb "εικάζει"
 --- 
 > Example 8
 >> **Premise** <br/>

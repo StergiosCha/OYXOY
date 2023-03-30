@@ -233,6 +233,8 @@ When annotating try to adhere to the following:
 >> * Lexical Semantics:Lexical Entailment:Synonymy
 >> * Lexical Semantics:Redundancy
 > 
+>   **Explanation**
+> A non-factive verb, synonymy and redundancy (dropping βάναυσα will not affect the truth conditions of the hypothesis) play a role in this example. 
 --- 
 > Example 7
 >> **Premise** <br/>
@@ -265,6 +267,8 @@ When annotating try to adhere to the following:
 >> **Tags**
 >> * Lexical Semantics:Symmetry
 > 
+> **Explanation**
+> A verb expressing a symmetrical relation, a married b implies that b married a
 --- 
 > Example 9
 >> **Premise** <br/>
@@ -279,7 +283,8 @@ When annotating try to adhere to the following:
 >> 
 >> **Tags**
 >> * Lexical Semantics:Collectivity
-> 
+> **Explanation**
+> A transitive verb expressing a relation between two arguments that is turned into an intransitive verb taking the result of the conjunction of the two arguments as argument
 --- 
 > Example 10
 >> **Premise** <br/>
@@ -295,6 +300,8 @@ When annotating try to adhere to the following:
 >> **Tags**
 >> * Lexical Semantics:Redundancy
 > 
+> **Explanation**
+> The information "με τα δόντια" is the information referred as "redundant", but appears in the hypothesis.  
 --- 
 > Example 11
 >> **Premise** <br/>
@@ -310,6 +317,8 @@ When annotating try to adhere to the following:
 >> **Tags**
 >> * Lexical Semantics:Redundancy
 > 
+>  **Explanation**
+> Dropping "δυνατά" does not affect the truthfulness of the sentence
 --- 
 > Example 12
 >> **Premise** <br/>

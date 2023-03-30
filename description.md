@@ -167,7 +167,9 @@ todo
 >> 
 >> **Tags**
 >> * Lexical Semantics:Morphological Modification
-> 
+>
+> **Explanation**
+> Morphological modification with the morpheme παρά
 --- 
 > Example 4
 >> **Premise** <br/>
@@ -183,6 +185,8 @@ todo
 >> **Tags**
 >> * Lexical Semantics:Morphological Modification
 > 
+> **Explanation**
+> Morphological negation with the "α" morpheme
 --- 
 > Example 5
 >> **Premise** <br/>

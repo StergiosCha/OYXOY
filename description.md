@@ -120,7 +120,16 @@ whereas `Common Sense/Knowledge` is valid, seeing as it has no internal subcateg
 
 ## 2. Annotation Guidelines
 
-Each annotator should prepare a minimum of 100 examples. Try to aim for a balanced annotation. Given that the multiple label annotation is rarer, we propose the following percentages: 30% for  the Entailment, Contradiction and Unknown labels, and 10% for a combination of labels. Furtermore, the annotators should also strive for a balance for each of the four main tags, i.e. approximately 25% for each major tag (Lexical Semantics, Predicate-Argument Structure, Logic, Common Sense/Knowledge), evenly distributed among subcategories. 
+Each annotator should prepare a minimum of 100 examples (the more, the better!). Try to aim for a balanced annotation. Given that the multiple label annotation is rarer, we propose the following percentages: 30% for  the Entailment, Contradiction and Unknown labels, and 10% for a combination of labels. Furtermore, the annotators should also strive for a balance for each of the four main tags, i.e. approximately 25% for each major tag (Lexical Semantics, Predicate-Argument Structure, Logic, Common Sense/Knowledge), evenly distributed among subcategories. 
+
+### 2.1 Tips for good annotation
+When annotating try to adhere to the following:
+* Avoid overusing the same lexical items and/or syntactic constructions. Variation is gold!
+* After having written an example, inspect it and try to see if any more labels/tags are suitable
+* Check whether flipping the elements of the pair, give you any potential interesting examples. In cases of flipping, flipping takes precedence over variation 
+
+### 2.2 Validation phase
+* 5 labels (1 as an example creator, 4 as just a labeler of existing examples)
 
 ## 3. Examples
 > Example 1

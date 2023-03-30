@@ -204,6 +204,8 @@ todo
 >> * Lexical Semantics:Lexical Entailment:Synonymy
 >> * Lexical Semantics:Redundancy
 > 
+> **Explanation**
+> A factive verb, synonymy and redundancy (dropping βάναυσα will not affect the truth conditions of the hypothesis) play a role in this example. 
 --- 
 > Example 6
 >> **Premise** <br/>
@@ -236,6 +238,8 @@ todo
 >> **Tags**
 >> * Lexical Semantics:Factivity:Non-Factive
 > 
+> **Explanation**
+> Non-factive verb "εικάζει"
 --- 
 > Example 8
 >> **Premise** <br/>

@@ -147,6 +147,9 @@ When annotating try to adhere to the following:
 >> **Tags**
 >> * Lexical Semantics:Lexical Entailment:Antonymy
 > 
+> **Explanation**
+> * The lexical semantics of the antonyms χτεσινό/φρεσκομαγειρεμένο are responsible for the label
+
 --- 
 > Example 2
 >> **Premise** <br/>
@@ -163,6 +166,9 @@ When annotating try to adhere to the following:
 >> * Lexical Semantics:Lexical Entailment:Meronymy
 >> * Predicate-Argument Structure:Core Arguments
 > 
+> **Explanation**
+> * The lexical semantics of meronyms (πόδι καρέκλας/καρέκλα) are responsible for the label. The Predicate-Argument Structure:Core Arguments label in this case denotes the change from a transitive to an intransitive meaning for the verb "έσπασε"
+
 --- 
 > Example 3
 >> **Premise** <br/>
@@ -421,6 +427,8 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> **Tags**
 >> * Predicate-Argument Structure:Alternation
 > 
+> **Explanation**
+> Passive alternation (plus ethical dative clitic vs by-phrase)
 --- 
 > Example 18
 >> **Premise** <br/>

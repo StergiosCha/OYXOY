@@ -340,7 +340,7 @@ When annotating try to adhere to the following:
 >> **Tags**
 >> * Lexical Semantics:FAO
 > 
-> > **Explanation**
+> **Explanation**
 > FAO "mono" in the hypothesis. The premise does not imply that Pericles managed to charm Thalia only. 
 --- 
 > Example 13

@@ -457,7 +457,7 @@ H Περσεφόνη πεινούσε τόσο πολύ που έφαγε και
 >> * Predicate-Argument Structure:Ellipsis
 >
 > **Explanation**
-> Τι να πεις τώρα εδώ..
+> VP ellipsis and FAO additive conjunction "και"
 --- 
 > Example 19
 >> **Premise** <br/>

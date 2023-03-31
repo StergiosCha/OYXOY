@@ -301,6 +301,7 @@ Inspect [annotation_example.txt](/annotation_example.txt) for an example.
 >> 
 >> **Tags**
 >> * Lexical Semantics:Collectivity
+>
 > **Explanation**
 > A transitive verb expressing a relation between two arguments that is turned into an intransitive verb taking the result of the conjunction of the two arguments as argument
 --- 

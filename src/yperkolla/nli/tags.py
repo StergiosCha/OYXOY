@@ -63,6 +63,7 @@ class LexicalEntailment(metaclass=TagBase): _str_ = 'Lexical Entailment'
 class LexicalSemantics(LexicalEntailment): _str_ = 'Lexical Semantics'
 class Hyponymy(LexicalSemantics, Tag): _str_ = 'Hyponymy'
 class Hypernymy(LexicalSemantics, Tag): _str_ = 'Hypernymy'
+class Synonymy(LexicalSemantics, Tag): _str_ = 'Synonymy'
 class Meronymy(LexicalSemantics, Tag): _str_ = 'Meronymy'
 class Antonymy(LexicalSemantics, Tag): _str_ = 'Antonymy'
 class MorphologicalModification(LexicalEntailment, Tag): _str_ = 'Morphological Modification'
@@ -123,6 +124,7 @@ _str_to_tag: dict[str, Type[Tag]] = {
     'Hypernymy': Hypernymy,
     'Antonymy': Antonymy,
     'Meronymy': Meronymy,
+    'Synonymy': Synonymy,
     'Morphological Modification': MorphologicalModification,
     'Factive': Factive,
     'Non-Factive': NonFactive,

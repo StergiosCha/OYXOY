@@ -1,13 +1,12 @@
 from __future__ import annotations
 
 from .annotators import Annotator
-from .tags import Tag, TagBase, union_of_supertypes, str_to_tag
+from .tags import Tag, TagBase, Type, union_of_supertypes, str_to_tag
+from .labels import Label
 
-from typing import Literal, Type
 from dataclasses import dataclass
 
 Sentence = str
-Label = Literal['Entailment', 'Unknown', 'Contradiction']
 
 
 @dataclass(eq=True, unsafe_hash=True)
@@ -23,7 +22,7 @@ class Sample:
         return {'premise': self.premise,
                 'hypothesis': self.hypothesis,
                 'tags': {repr(tag) for tag in self.tags},
-                'labels': self.labels,
+                'labels': {label.value for label in self.labels},
                 'author': self.author.value,
                 'validators': {validator.value for validator in self.validators}}
 
@@ -32,7 +31,7 @@ class Sample:
         return Sample(premise=json['premise'],
                       hypothesis=json['hypothesis'],
                       tags={str_to_tag(tag.split(':')[-1]) for tag in json['tags']},
-                      labels=json['labels'],
+                      labels={Label[label] for label in json['labels']},
                       author=Annotator(json['author']),
                       validators={Annotator(value) for value in json['validators']})
 

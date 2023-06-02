@@ -103,7 +103,7 @@ class Universal(Quantification, Tag): _str_ = 'Universal'
 class Existential(Quantification, Tag): _str_ = 'Existential'
 class NonStandard(Quantification, Tag): _str_ = 'Non-Standard'
 class Comparatives(Logic, Tag): _str_ = 'Comparatives'
-class Temporals(Logic, Tag): _str_ = 'Temporals'
+class Temporal(Logic, Tag): _str_ = 'Temporal'
 
 
 # CSK
@@ -150,7 +150,7 @@ _str_to_tag: dict[str, Type[Tag]] = {
     'Existential': Existential,
     'Non-Standard': NonStandard,
     'Comparatives': Comparatives,
-    'Temporals': Temporals,
+    'Temporal': Temporal,
     'Common Sense/Knowledge': CSK,
 }
 

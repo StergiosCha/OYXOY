@@ -104,6 +104,8 @@ class Existential(Quantification, Tag): _str_ = 'Existential'
 class NonStandard(Quantification, Tag): _str_ = 'Non-Standard'
 class Comparatives(Logic, Tag): _str_ = 'Comparatives'
 class Temporal(Logic, Tag): _str_ = 'Temporal'
+# for error-correction purposes
+class RequiresAttention(Tag, metaclass=TagBase): _str_ = 'RequiresAttention'
 
 
 # CSK
@@ -152,6 +154,7 @@ _str_to_tag: dict[str, Type[Tag]] = {
     'Comparatives': Comparatives,
     'Temporal': Temporal,
     'Common Sense/Knowledge': CSK,
+    'Requires Attention': RequiresAttention
 }
 
 

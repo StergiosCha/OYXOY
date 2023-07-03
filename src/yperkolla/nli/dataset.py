@@ -13,8 +13,8 @@ Sentence = str
 class Sample:
     premise:    Sentence
     hypothesis: Sentence
-    tags:       set[Type[Tag]]
-    labels:     set[Label]
+    tags:       set[Type[Tag]] | dict[Type[Tag], tuple[int, int]]
+    labels:     set[Label] | dict[Label, tuple[int, int]]
     author:     Annotator
     validators: set[Annotator]
 

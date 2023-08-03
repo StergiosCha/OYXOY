@@ -12,8 +12,8 @@ class Entry:
     def from_json(json: _EntryJson) -> Entry:
         return Entry(lemma=json['lemma'], senses=[Sense.from_json(s) for s in json['senses']])
 
-    def json(self) -> _EntryJson:
-        return {'lemma': self.lemma, 'senses': [s.json() for s in self.senses]}
+    def to_json(self) -> _EntryJson:
+        return {'lemma': self.lemma, 'senses': [s.to_json() for s in self.senses]}
 
 
 @dataclass
@@ -25,7 +25,7 @@ class Sense:
     def from_json(json: _SenseJson) -> Sense:
         return Sense(definition=json['definition'], examples=json['examples'])
 
-    def json(self) -> _SenseJson:
+    def to_json(self) -> _SenseJson:
         return {'definition': self.definition, 'examples': self.examples}
 
 
@@ -37,8 +37,8 @@ class Dataset:
     def from_json(json: _DatasetJson) -> Dataset:
         return Dataset(entries=[Entry.from_json(entry) for entry in json['entries']])
 
-    def json(self) -> _DatasetJson:
-        return {'entries': [entry.json() for entry in self.entries]}
+    def to_json(self) -> _DatasetJson:
+        return {'entries': [entry.to_json() for entry in self.entries]}
 
 
 class _EntryJson(TypedDict):

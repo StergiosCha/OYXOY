@@ -31,7 +31,7 @@ Sample(premise='Ο Ωρίωνας είναι αστέρι στο τένις.',
        hypothesis='Ο Ωρίωνας είναι αστέρι.',
        tags={Predicate-Argument Structure:Intersectivity:Non-Intersective,
              Common Sense/Knowledge},
-       labels={Contradiction, Unknown, Entailment})
+       labels={Contradiction, Unknown})
 ```
 
 Use standard python queries to isolate samples of interest.

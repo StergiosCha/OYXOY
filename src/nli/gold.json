@@ -5804,7 +5804,6 @@
             ],
             "labels": [
                 "Contradiction",
-                "Entailment",
                 "Unknown"
             ]
         },

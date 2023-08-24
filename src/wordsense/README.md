@@ -11,7 +11,7 @@ To load the dataset:
 from wordsense.dataset import Dataset
 from json import load
 
-with open('./nli/dataset.json', 'r') as f:
+with open('./wordsense/dataset.json', 'r') as f:
     dataset = Dataset.from_json(load(f))
 ```
 

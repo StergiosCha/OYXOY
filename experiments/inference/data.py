@@ -1,3 +1,4 @@
+import unicodedata
 from json import load
 from nli.dataset import Sample, Label, Dataset, Tag
 from collections import Counter
@@ -42,9 +43,14 @@ def iterative_filter(samples: list[Sample]) -> tuple[list[Sample], list[Sample]]
 TokenizedSample = tuple[list[int], list[int], set[Tag], set[Label]]
 
 
+def strip_accents_and_lowercase(s: str) -> str:
+    return ''.join(c for c in unicodedata.normalize('NFD', s)
+                   if unicodedata.category(c) != 'Mn').lower()
+
+
 def tokenize_sample(tokenizer: BertTokenizer, sample: Sample) -> TokenizedSample:
-    return (tokenizer.encode(sample.premise),
-            tokenizer.encode(sample.hypothesis),
+    return (tokenizer.encode(strip_accents_and_lowercase(sample.premise)),
+            tokenizer.encode(strip_accents_and_lowercase(sample.hypothesis)),
             sample.tags,
             sample.labels)
 
@@ -58,6 +64,7 @@ def process_data() -> tuple[tuple[tuple[list[TokenizedSample], list[TokenizedSam
                             list[Sample]]:
     seed(42)
     print('Preparing tokenizer...')
+    # tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-cased')
     tokenizer = BertTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
     with open('../../datasets/nli/gold.json', 'r') as f:
         gold = Dataset.from_json(load(f))

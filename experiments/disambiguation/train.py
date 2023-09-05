@@ -33,7 +33,6 @@ def main(device: str = 'cpu'):
     dev_sampler = Sampler(definitions, sorted(dev, key=lambda x: x[1]))
     test_in_sampler = Sampler(definitions, sorted(test_in, key=lambda x: x[1]))
     test_out_sampler = Sampler(definitions, sorted(test_out, key=lambda x: x[1]))
-    pdb.set_trace()
 
     print('Going ham...')
     for repeat in range(num_repeats):

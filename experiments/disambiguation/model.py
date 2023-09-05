@@ -1,34 +1,34 @@
-import pdb
-
-import torch.nn.init
-from torch import Tensor, empty
-from torch.nn import Module, Parameter
+from torch import Tensor
+from torch.nn import Module, Linear
+from torch.nn.functional import dropout
 from transformers import BertModel
 from math import sqrt
 
 from opt_einsum import contract
 
-from torch_geometric.utils import softmax as sparse_softmax, to_dense_batch
+from torch_geometric.utils import to_dense_batch
 
 
-class SenseDisambiguator(Module):
+class Base(Module):
     def __init__(self):
-        super(SenseDisambiguator, self).__init__()
+        super(Base, self).__init__()
         self.core = BertModel.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
-        # self.weight = Parameter(empty(768,), requires_grad=True)
-        # torch.nn.init.normal_(self.weight, 0, 1/sqrt(768))
+        self.param = Linear(768, 1)
 
     def bert(self, token_ids: Tensor, attention_mask: Tensor) -> Tensor:
         return self.core(input_ids=token_ids, attention_mask=attention_mask)['last_hidden_state']
 
     def contextualize(self, token_ids: Tensor, token_mask: Tensor, word_mask: Tensor) -> Tensor:
         contextualized = self.bert(token_ids=token_ids, attention_mask=token_mask)
-        aggregated = (contextualized * word_mask[..., None]).sum(dim=-2)
+        aggregated = (contextualized * word_mask[..., None]).mean(dim=-2)
         return aggregated
-
+    
     def get_agreement_values(self, source: Tensor, target: Tensor) -> Tensor:
-        return contract('bd,bd->b', source, target)  # type: ignore
+        source = dropout(source, p=0.25, training=self.training)
+        return contract('bd,bd->b', source, target) / sqrt(768)
 
+
+class Disambiguator(Base):
     def disambiguate(self, definitions: tuple[Tensor, Tensor],
                      examples: tuple[Tensor, Tensor, Tensor],
                      edge_index: Tensor) -> Tensor:
@@ -38,3 +38,10 @@ class SenseDisambiguator(Module):
         target = example_reprs[edge_index[1]]
         agreements = self.get_agreement_values(source, target)
         return to_dense_batch(agreements, edge_index[1], fill_value=-1e08)[0]
+
+    def contrast(self, examples: tuple[Tensor, Tensor, Tensor], edge_index: Tensor) -> Tensor:
+        example_reprs = self.contextualize(*examples)
+        source = example_reprs[edge_index[0]]
+        target = example_reprs[edge_index[1]]
+        agreements = self.get_agreement_values(source, target)
+        return agreements

@@ -22,13 +22,14 @@ def load_file(file: str) -> Dataset:
         return Dataset.from_json(load(f))
 
 
-def process_data(entries: list[Entry]):
+def process_data():
+    entries = load_file('../../datasets/wordsense/dataset.json').entries
     print('Preparing lemmatizer...')
     lemmatizer = spacy.load('el_core_news_sm')
     print('Preparing tokenizer...')
     tokenizer = BertTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
     print('Tokenizing...')
-    return process_entry(entries, lemmatizer, tokenizer)
+    return flatten_entries(process_entries(entries, lemmatizer, tokenizer))
 
 
 def _norm(input_str: str) -> str:
@@ -58,7 +59,7 @@ def tokenize_with_mask(ws: list[str], mask: list[bool], tokenizer: BertTokenizer
             [False, *(m for ms in mask for m in ms), False])
 
 
-def process_entry(entries: list[Entry], spacy_model: spacy.Language, tokenizer: BertTokenizer) \
+def process_entries(entries: list[Entry], spacy_model: spacy.Language, tokenizer: BertTokenizer) \
         -> list[ProcessedEntry]:
     processed = []
     for entry in entries:
@@ -80,3 +81,12 @@ def process_entry(entries: list[Entry], spacy_model: spacy.Language, tokenizer: 
             continue
         processed.append(ProcessedEntry(definitions=definitions, examples=examples))
     return processed
+
+
+def flatten_entries(entries: list[ProcessedEntry]) -> tuple[list[list[Tokens]],
+                                                            list[tuple[tuple[Tokens, Mask], int, int]]]:
+    definitions = [entry.definitions for entry in entries]
+    examples = [(example, entry_id, sense_id)
+                for entry_id, entry in enumerate(entries)
+                for sense_id, exs in enumerate(entry.examples) for example in exs]
+    return definitions, examples

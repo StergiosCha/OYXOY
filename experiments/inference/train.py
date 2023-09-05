@@ -25,15 +25,15 @@ def main(device: str = 'cpu'):
     batch_size: int = 32
     patience: int = 5
 
-    train_sampler = Sampler(xnli_test + xnli_dev)
-    dev_sampler = Sampler(adapt)
+    train_sampler = Sampler(xnli_test + adapt)
+    dev_sampler = Sampler(xnli_dev)
     test_sampler = Sampler(test)
 
     print('Going ham...')
     for repeat in range(num_repeats):
         print(f'Initializing model {repeat}...')
         model = NLI().to(device)
-        optim = AdamW(model.parameters(), lr=1e-5, weight_decay=1e-02)
+        optim = AdamW(model.parameters(), lr=1e-5, weight_decay=1e-01)
         best_epoch, best_f1 = None, None
 
         for epoch in range(num_epochs):

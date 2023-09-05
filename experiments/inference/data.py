@@ -64,8 +64,8 @@ def process_data() -> tuple[tuple[tuple[list[TokenizedSample], list[TokenizedSam
                             list[Sample]]:
     seed(42)
     print('Preparing tokenizer...')
-    # tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-cased')
-    tokenizer = BertTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
+    tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-cased')
+    # tokenizer = BertTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
     with open('../../datasets/nli/gold.json', 'r') as f:
         gold = Dataset.from_json(load(f))
     with open('../../datasets/nli/FraCaS.json', 'r') as f:

@@ -12,7 +12,7 @@ Contributions and feedback are highly encouraged.
 
 ## Datasets
 The repository currently contains two gold-standard datasets, described in our paper *"OYXOY: A Modern NLP Test Suite 
-for Modern Greek"* ([abs/23909.07009](https://arxiv.org/abs/2309.07009)).
+for Modern Greek"* [[abs/23909.07009](https://arxiv.org/abs/2309.07009)].
 
 ### Natural Language Inference (NLI)
 
@@ -47,6 +47,16 @@ Browse to the subdirectory of interest and inspect the README file within for mo
 
 ## Requirements
 `Python >= 3.10` if using the Python interfaces
+
+## Tasks & Baselines
+From the datasets above, we extract 4 supervised ML tasks:
+1. multi-label natural language inference
+2. word-sense disambiguation (sense selection)
+3. word-sense disambiguation (words-in-context example comparison)
+4. metaphor detection
+
+The code necessary to replicate our experiments is available in the 
+[baselines](https://github.com/StergiosCha/OYXOY/tree/baselines) branch (undocumented).
 
 # Citing
 

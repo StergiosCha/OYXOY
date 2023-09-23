@@ -4,7 +4,7 @@ The data are contained in json format within `dataset.json`.
 Each sample contains a lemma and a list of senses, each sense being in turn a periphrastic definition and a list of example phrases.
 
 ### Python Interface
-To load and process the data in python, set your working directory to match the `src` folder of this repository.
+To load and process the data in python, set your working directory to contain the current folder.
 
 To load the dataset:
 ```python

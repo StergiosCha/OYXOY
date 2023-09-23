@@ -4,9 +4,10 @@ The novel data are contained in json format within `gold.json`.
 The FraCaS-adaped data are contained within `FraCaS.json`.
 Each sample contains a premise, a hypothesis, a non-empty set of relevant linguistic tags and a non-empty set of possible inference labels.
 For FraCaS, the hypothesis can consist of multiple sentences.
+For an explanation of the tags used, refer to `tags.py`.
 
 ### Python Interface
-To load and process the data in python, set your working directory to match the `src` folder of this repository.
+To load and process the data in python, set your working directory to contain the current folder.
 
 To load the dataset:
 ```python

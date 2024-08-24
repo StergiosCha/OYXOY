@@ -72,6 +72,22 @@ class SenseSelectionPromptHandler(DisambiguationPromptHandler):
         ] 
         return messages
 
+    def get_chats(self):
+        train_sample_messages = []
+        for sample in self.train:
+            messages = self.get_messages(sample, None)
+            messages.append({'role':'assistant', 'content': str(sample['def_id']+1) })
+            train_sample_messages.append(messages)
+        
+        dev_sample_messages = []
+        for sample in self.dev:
+            messages = self.get_messages(sample, None)
+            messages.append({'role':'assistant', 'content': str(sample['def_id']+1) })
+            dev_sample_messages.append(messages)
+
+        return {"train": {"chat": train_sample_messages}, "dev":{"chat": dev_sample_messages}}
+
+
 class WordInContextPromptHandler(DisambiguationPromptHandler):
     def __init__(self, method, n_shots):
 
@@ -112,6 +128,21 @@ class WordInContextPromptHandler(DisambiguationPromptHandler):
             },
         ] 
         return messages
+
+    def get_chats(self):
+        train_sample_messages = []
+        for sample in self.train:
+            messages = self.get_messages(sample, None)
+            messages.append({'role':'assistant', 'content': 'yes' if sample['target'] else 'no' })
+            train_sample_messages.append(messages)
+        
+        dev_sample_messages = []
+        for sample in self.dev:
+            messages = self.get_messages(sample, None)
+            messages.append({'role':'assistant', 'content': 'yes' if sample['target'] else 'no' })
+            dev_sample_messages.append(messages)
+
+        return {"train": {"chat": train_sample_messages}, "dev":{"chat": dev_sample_messages}}
 
 class InferencePromptHandler:
     def __init__(self, method, n_shots):
@@ -155,10 +186,10 @@ class InferencePromptHandler:
         dev_sample_messages = []
         for sample in self.dev:
             messages = self.get_messages(sample, None)
-            messages.append({'role':'assistant', 'content': ' '.join([str(label).lower() if str(label)!='Unknown' else 'neutral' for label in sample.labels]) })
+            messages.append({'role':'assistant', 'content': ' '.join([repr(label).lower() if repr(label)!='Unknown' else 'neutral' for label in sample.labels]) })
             dev_sample_messages.append(messages)
 
-        return {"chat": dev_sample_messages}
+        return {"train": {"chat": dev_sample_messages}}
 
 class MetaphorPromptHandler:
     def __init__(self, method, n_shots):
@@ -176,19 +207,31 @@ class MetaphorPromptHandler:
         self.train =  self.train_initial + self.dev
         self.method = method
         self.test_sets = {'iv' :self.test, 'oov':self.oov_examples}
+        self.n_shots = n_shots
     
     def _get_prompts(self):
         if self.method=='zero_shot_metaphor':
             return zero_shot_metaphor_system, zero_shot_metaphor_user
+        elif self.method=='few_shot_metaphor':
+            return few_shot_metaphor_system + "\n".join([f"{ii}. "+"sentence: {}\nAnswer: {}" for ii in range(self.n_shots)]), zero_shot_metaphor_user
         else:
             assert self.method in METHODS['metaphor'], f"Prompt should be one of {METHODS['metaphor']}"
     
     def get_messages(self, sample, sample_idx=None, n_shots=None):
         prompt_sys, prompt_usr = self._get_prompts()
-        messages = [
-            {"role": "system", "content": prompt_sys},
-            {"role": "user", "content": prompt_usr.format(sample[0])},
-        ]
+        if 'zero_shot' in self.method:
+            messages = [
+                {"role": "system", "content": prompt_sys},
+                {"role": "user", "content": prompt_usr.format(sample[0])},
+            ]
+        else:
+            examples = pd.DataFrame(self.train, columns=['sentence', 'label']).groupby('label').agg(lambda df: df.head(self.n_shots//2)).explode('sentence')
+            samples_list = [[example.sentence, 'yes' if example.name else 'no'] for ii, example in examples.iterrows()]
+            
+            messages = [
+                {"role": "system", "content": prompt_sys.format(*([el for sample in samples_list for el in sample]))},
+                {"role": "user", "content": prompt_usr.format(sample[0])},
+            ]
         
         return messages
     
@@ -205,7 +248,7 @@ class MetaphorPromptHandler:
             messages.append({'role':'assistant', 'content': 'yes' if sample[1] else 'no'})
             dev_sample_messages.append(messages)
 
-        return {"chat": train_sample_messages}, {"chat": dev_sample_messages}
+        return {"train": {"chat": train_sample_messages}, "dev":{"chat": dev_sample_messages}}
 
 
 class PromptHandlerSelector:

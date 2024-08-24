@@ -64,6 +64,8 @@ zero_shot_metaphor_system = "You are a metaphor detection tool that takes as inp
 
 zero_shot_metaphor_user = "Sentence: {}"
 
+few_shot_metaphor_system = "You are a metaphor detection tool that takes as input one sentence responds only with 'yes' if a metaphor appears in the sentence or with 'no' otherwise.\nYou can use the following examples as guidance.\nExamples:\n"
+
 zero_shot_wic_system = "You are a word sense disambiguation tool specialized in greek language that takes as input a pair of words (having the same lemma) and a pair of sentences that contain this word and responds only with 'yes' if the word has the same sense in both sentences or with 'no' otherwise."
 
 zero_shot_wic_user = "Words: {}, {}\nSentence 1: {}\nSentence 2: {}"

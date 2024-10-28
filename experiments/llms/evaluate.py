@@ -50,6 +50,10 @@ def main(args):
         total['output'] = total.output.apply(lambda value: 'True' if ('yes' in value.lower()) or ('ναι' in value.lower()) else 'False')
         print(classification_report(total['1'], total['output']))
 
+    elif args.dataset == 'paraphrase':
+        total = aggregate_results(args.input_dir_path)
+        print(classification_report(total['2'], total['output']))
+
     elif args.dataset == 'word-in-context':
         total = aggregate_results(args.input_dir_path)
         total['output'] = total.output.apply(lambda value: 'True' if  ('yes' in value.lower()) or ('ναι' in value.lower()) else 'False')

@@ -4,6 +4,7 @@ METHODS = {
     'metaphor': ['zero_shot_metaphor'],
     'sense-selection': ['zero_shot_ss', 'zero_shot_ss_gr', 'zero_shot_ss_en'],
     'word-in-context': ['zero_shot_wic'],
+    'paraphrase': ['zero_shot_paraphrase', 'few_shot_paraphrase']
 }
 
 zero_shot_nli_label_system = "You are an annotator for natural language inference data in greek.\nGiven a premise and a hypothesis, answer with one or two of the words: 'entailment', 'contradiction' or 'neutral'"
@@ -82,3 +83,8 @@ zero_shot_ss_system_en = "You are a tool that given a list of possible word defi
 
 zero_shot_ss_user_en = "The word {} used in the sentence: {} may correspond to one of the following definitions.\n{}"
 
+zero_shot_paraphrase_system = "You are a paraphrase detection tool that takes as input two sentences and responds with a single word 'Paraphrase' if the one sentence is paraphrase of the other and 'Non Paraphrase' otherwise. "
+
+zero_shot_paraphrase_user = "sentence 1: {}\nsentence 2: {}"
+
+few_shot_paraphrase_system = "You are a paraphrase detection tool that takes as input two sentences responds only with 'Paraphrase' if a sentence is a paraphrase of the other sentence or with 'Non Paraphrase' otherwise.\nYou can use the following examples as guidance.\nExamples:\n"

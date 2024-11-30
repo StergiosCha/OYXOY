@@ -6,6 +6,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "../../"))
 from experiments.inference.data import load_data as inference_load_data
 from experiments.metaphor.data import load_file as metaphor_load_file , filter_metaphors
 from experiments.paraphrase.data import load_data as paraphase_load_data
+from experiments.gender_bias.data import load_premises
 from experiments.disambiguation.data import load_file as disambiguation_load_file, process_data_wo_tokenization as disambiguation_process_data
 from experiments.disambiguation.batching import Sampler
 from experiments.llms.icl import FinetunedXNLIBasedICL
@@ -299,6 +300,50 @@ class ParaphrasePromptHandler:
         return {"train": {"chat": train_sample_messages}}
 
 
+class GenderBiasCRPromptHandler:
+    def __init__(self, method, n_shots):
+        data_df = load_premises()
+        train_df, test_df = data_df.iloc[:451], data_df.iloc[452:]
+        self.method = method
+        self.train_df = train_df
+        self.test_sets = {'test' : test_df.values}
+        self.n_shots = n_shots
+    
+    def _get_prompts(self):
+        if self.method=='zero_shot_gender_bias_cr':
+            return zero_shot_gender_bias_cr_system, zero_shot_gender_bias_cr_user
+        elif self.method=='few_shot_gender_bias_cr':
+            return few_shot_gender_bias_cr_system, zero_shot_gender_bias_cr_user
+        else:
+            assert self.method in METHODS['gender_bias_cr'], f"Prompt should be one of {METHODS['gender_bias_cr']}"
+
+    def get_messages(self, sample, sample_idx=None, n_shots=None):
+        prompt_sys, prompt_usr = self._get_prompts()
+
+        if 'zero_shot' in self.method:
+            messages = [
+                {"role": "system", "content": prompt_sys},
+                {"role": "user", "content": prompt_usr.format(sample[5], sample[1], sample[2], sample[1])},
+            ]
+            print(messages)
+        else:
+            messages = [
+                {"role": "system", "content": prompt_sys + "\n".join(cr_examples[:self.n_shots])},
+                {"role": "user", "content": prompt_usr.format(sample[5], sample[1], sample[2], sample[1])},
+            ]
+            print(messages)
+        return messages
+    
+    def get_chats(self):
+        train_sample_messages = []
+        for ii, sample in self.train_df.iterrows():
+            messages = self.get_messages(sample)
+            messages.append({'role':'assistant', 'content': sample['order']})
+            train_sample_messages.append(messages)
+
+        return {"train": {"chat": train_sample_messages}}
+
+
 class PromptHandlerSelector:
     def __init__(self, dataset):
         self.dataset = dataset
@@ -314,5 +359,7 @@ class PromptHandlerSelector:
             return MetaphorPromptHandler(*args, **kwargs)
         elif self.dataset == 'paraphrase':
             return ParaphrasePromptHandler(*args, **kwargs)
+        elif self.dataset == 'gender_bias_cr':
+            return GenderBiasCRPromptHandler(*args, **kwargs)
         else:
             assert 1==0

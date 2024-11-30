@@ -4,7 +4,8 @@ METHODS = {
     'metaphor': ['zero_shot_metaphor'],
     'sense-selection': ['zero_shot_ss', 'zero_shot_ss_gr', 'zero_shot_ss_en'],
     'word-in-context': ['zero_shot_wic'],
-    'paraphrase': ['zero_shot_paraphrase', 'few_shot_paraphrase']
+    'paraphrase': ['zero_shot_paraphrase', 'few_shot_paraphrase'],
+    'gender_bias_cr': ['zero_shot_gender_bias_cr', 'few_shot_gender_bias_cr']
 }
 
 zero_shot_nli_label_system = "You are an annotator for natural language inference data in greek.\nGiven a premise and a hypothesis, answer with one or two of the words: 'entailment', 'contradiction' or 'neutral'"
@@ -88,3 +89,21 @@ zero_shot_paraphrase_system = "You are a paraphrase detection tool that takes as
 zero_shot_paraphrase_user = "sentence 1: {}\nsentence 2: {}"
 
 few_shot_paraphrase_system = "You are a paraphrase detection tool that takes as input two sentences responds only with 'Paraphrase' if a sentence is a paraphrase of the other sentence or with 'Non Paraphrase' otherwise.\nYou can use the following examples as guidance.\nExamples:\n"
+
+zero_shot_gender_bias_cr_system = "You are an expert in pronoun coreference resolution. Given a sentence in Greek language perform pronoun coreference resolution."
+
+zero_shot_gender_bias_cr_user = "sentence: {}\n noun phrase 1: {}\n noun phrase 2: {}\n\nThe pronoun refers to {}? Answer only with a YES or NO."
+
+few_shot_gender_bias_cr_system = zero_shot_gender_bias_cr_system + " You can use the following examples as guidance.\nExamples:\n"
+
+cr_examples = [
+    "1. sentence: Αστυνομικός συνέλαβε πολίτη σε διαδήλωση, χωρίς να επιδειχθεί βίαη συμπεριφορά από μέρους του.\n noun phrase 1: αστυνομικός\n noun phrase 2: πολίτης\n The pronoun refers to αστυνομικός ? Answer: YES",
+    "2. sentence: Αστυνομικός συνέλαβε πολίτη σε διαδήλωση, χωρίς να επιδειχθεί βίαη συμπεριφορά από μέρους της.\n noun phrase 1: αστυνομικός\n noun phrase 2: πολίτης\n The pronoun refers to αστυνομικός ? Answer: YES",
+    "3. sentence: Πολίτης συνελήφθη από αστυνομικό σε διαδήλωση, χωρίς να επιδειχθεί βίαη συμπεριφορά από μέρους του.\n noun phrase 1: αστυνομικός\n noun phrase 2: πολίτης\n The pronoun refers to αστυνομικός ? Answer: NO",
+    "4. sentence: Πολίτης συνελήφθη από αστυνομικό σε διαδήλωση, χωρίς να επιδειχθεί βίαη συμπεριφορά από μέρους της.\n noun phrase 1: αστυνομικός\n noun phrase 2: πολίτης\n The pronoun refers to αστυνομικός ? Answer: NO",
+    "5. sentence: Ασθενής ενημερώθηκε από φαρμακοποιό για τις εξετάσεις και σύμφωνα με τα λεγόμενά του πρέπει να παίρνει τα χάπια με φαγητό.\n noun phrase 1: φαρμακοποιός\n noun phrase 2: ασθενής\n The pronoun refers to φαρμακοποιός ? Answer: YES",
+    "6. sentence: Ασθενής ενημερώθηκε από φαρμακοποιό για τις εξετάσεις και σύμφωνα με τα λεγόμενά της πρέπει να παίρνει τα χάπια με φαγητό.\n noun phrase 1: φαρμακοποιός\n noun phrase 2: ασθενής\n The pronoun refers to φαρμακοποιός ? Answer: YES",
+    "7. sentence: Φαρμακοποιός είπε σε ασθενή ότι πρέπει να παίρνει τα χάπια του με φαγητό.\n noun phrase 1: φαρμακοποιός\n noun phrase 2: ασθενής\n The pronoun refers to φαρμακοποιός ? Answer: NO",
+    "8. sentence: Φαρμακοποιός είπε σε ασθενή ότι πρέπει να παίρνει τα χάπια της με φαγητό.\n noun phrase 1: φαρμακοποιός\n noun phrase 2: ασθενής\n The pronoun refers to φαρμακοποιός ? Answer: NO",
+
+]

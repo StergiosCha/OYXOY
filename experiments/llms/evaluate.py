@@ -49,6 +49,11 @@ def main(args):
         total = aggregate_results(args.input_dir_path)
         total['output'] = total.output.apply(lambda value: 'True' if ('yes' in value.lower()) or ('ναι' in value.lower()) else 'False')
         print(classification_report(total['1'], total['output']))
+    
+    elif args.dataset == 'gender_bias_cr':
+        total = aggregate_results(args.input_dir_path)
+        total['output'] = total.output.apply(lambda x: int(not x=='YES'))
+        print(classification_report(total['3'].astype(int), total['output']))
 
     elif args.dataset == 'paraphrase':
         total = aggregate_results(args.input_dir_path)

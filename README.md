@@ -24,6 +24,10 @@ exhibits, allowing for a finer-grained error analysis and evaluation.
 Of the 1763 pairs, 1049 are novel and 713 are converted from the Greek FraCaS.
 All pairs and their annotations are written and checked by human experts.
 
+The NLI dataset also includes an idioms subset (`src/nli/idioms.json`) of 232 novel pairs built around Modern Greek
+idioms, created and annotated by Christina Klironomou. Its labels account for both the idiomatic and the literal reading
+of the premise. The subset is kept separate from `gold.json`, so the figures above and in the paper are unchanged.
+
 ### WordSense
 A structured subset of the Dictionary of Modern Greek focusing on word polysemy.
 The dataset specifies a number of senses for each word.

@@ -1,0 +1,3112 @@
+{
+    "name": "OYXOY NLI: Idioms",
+    "description": "Premise/hypothesis pairs built around Modern Greek idioms. Labels cover both the idiomatic and the literal reading of the premise, where the literal reading is coherent.",
+    "author": "Christina Klironomou",
+    "samples": [
+        {
+            "id": "idiom-001",
+            "premise": "Έβρεχε καρεκλοπόδαρα χθες στη γιορτή.",
+            "hypothesis": "Στη γιορτή έβρεχε λίγο.",
+            "tags": [
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-003",
+            "premise": "Είπε ότι θα τελειώσει την εργασία βρέξει χιονίσει.",
+            "hypothesis": "Θα τελειώσει την εργασία σε κάθε περίπτωση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Factive"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-004",
+            "premise": "Όλο το απόγευμα έψαχνε να σκοτώσει την ώρα του.",
+            "hypothesis": "Το απόγευμα έψαχνε να απασχοληθεί.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-005",
+            "premise": "Στο γραφείο σκοτώνει μύγες.",
+            "hypothesis": "Δουλεύει πολύ στη δουλειά του.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Meronymy"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-006",
+            "premise": "Μου είπε ότι θα πάω μπροστά και με χαροποίησε.",
+            "hypothesis": "Μου είπε ότι όλα θα πάνε καλά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Logic:Conjunction"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-007",
+            "premise": "Έδωσα χρόνο στην πληγή να κλείσει.",
+            "hypothesis": "Χρειαζόταν να περιμένω.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-008",
+            "premise": "Η κατάσταση στο σπίτι μας ήταν άνω ποταμών.",
+            "hypothesis": "Η κατάσταση είχε ξεφύγει στο σπίτι.",
+            "tags": [
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-009",
+            "premise": "Η θεατρική παράσταση του σχολείου ήταν όλα τα λεφτά.",
+            "hypothesis": "Η παράσταση δεν ήταν ωραία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Lexical Semantics:Hyponymy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-010",
+            "premise": "Όταν τον ρώτησα για την υπόθεση το έβαλε στα πόδια.",
+            "hypothesis": "Απάντησε στην ερώτησή μου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-011",
+            "premise": "Την εμπιστεύτηκα αλλά τελικά μου την έκανε.",
+            "hypothesis": "Εμπιστεύτηκα την αδερφή μου αλλά με πρόδωσε.",
+            "tags": [
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-012",
+            "premise": "Έφυγε άρον άρον από την πορεία.",
+            "hypothesis": "Έφυγε βιαστικά γιατί είχε μια υποχρέωση.",
+            "tags": [
+                "Lexical Entailment:Redundancy",
+                "Lexical Entailment:Lexical Semantics:Synonymy",
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-013",
+            "premise": "Ο Ανδρέας το έσκασε από το σπίτι μόλις τελείωσε το Γυμνάσιο.",
+            "hypothesis": "Έμεινε με την οικογένειά του μέχρι την ενηλικίωση.",
+            "tags": [
+                "Logic:Temporal",
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Lexical Entailment:Lexical Semantics:Meronymy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-014",
+            "premise": "Η προπονήτρια άσκησε πιέσεις όσο πατάει η γάτα.",
+            "hypothesis": "Η προπονήτρια δεν έδειξε κανένα έλεος.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-015",
+            "premise": "Το ψωμί είχε τόσο βούτυρο που μου έκοψε την όρεξη.",
+            "hypothesis": "Δεν πεινάω γιατί έφαγα ψωμί.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-016",
+            "premise": "Την έβγαλε λάδι με μια συνάντηση 15 λεπτών, ενώ εμείς μείναμε για μιάμιση ώρα.",
+            "hypothesis": "Δεν ταλαιπωρήθηκε με τη συνάντηση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-017",
+            "premise": "Κόπηκε στην εξέταση, αν και περίμενε να πάρει άριστα.",
+            "hypothesis": "Δεν πέρασε το μάθημα που του άρεσε.",
+            "tags": [
+                "Lexical Entailment:Redundancy",
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Meronymy",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-018",
+            "premise": "Η κυβέρνηση ανακοίνωσε δρακόντεια μέτρα για το ζήτημα της πειρατείας στο Διαδίκτυο.",
+            "hypothesis": "Τα μέτρα για τη φοροδιαφυγή θα είναι επίσης αυστηρά.",
+            "tags": [
+                "Lexical Entailment:FAO",
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-019",
+            "premise": "Η δήλωση της ηθοποιού έκανε πάταγο.",
+            "hypothesis": "Κανείς δεν ενδιαφέρθηκε για τη δήλωση γνωστής ηθοποιού.",
+            "tags": [
+                "Lexical Entailment:Redundancy",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-020",
+            "premise": "Η Ναταλία έγινε πυρ και μανία με την έλλειψη οργάνωσης.",
+            "hypothesis": "Η Ναταλία νευρίασε με αυτό που είδε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-021",
+            "premise": "Μου έκοψε τα φτερά που δεν έλαβα απάντηση.",
+            "hypothesis": "Απογοητεύτηκα από την έλλειψη απάντησης.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-022",
+            "premise": "Πηγή έμπνευσης για την έκθεση αποτέλεσε ο ερχομός της Άνοιξης.",
+            "hypothesis": "Η έκθεση αναφερόταν στο χειμώνα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-023",
+            "premise": "Όταν ένιωσε πως ήταν έτοιμη για το επόμενο βήμα, βρήκε την πόρτα κλειστή.",
+            "hypothesis": "Ήταν εύκολο να προχωρήσει.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-024",
+            "premise": "Του είπα να σταματήσει να μιλάει άσχημα αλλά αυτός το βιολί του.",
+            "hypothesis": "Του είπα να μην κακολογεί κόσμο αλλά αυτός δεν με άκουσε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-025",
+            "premise": "Του είπα να σταματήσει να μιλάει άσχημα αλλά αυτός το βιολί του.",
+            "hypothesis": "Όσο του μιλούσα, έπαιζε βιολί.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-026",
+            "premise": "Στην αρχή η πρόβα φαινόταν να πηγαίνει καλά, αλλά προς το τέλος τα κάναμε θάλασσα.",
+            "hypothesis": "Στο τέλος της πρόβας ήμασταν ευχαριστημένα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-027",
+            "premise": "Στο ταξίδι όλα πήγαν ρολόι.",
+            "hypothesis": "Το ταξίδι ήταν μια αποτυχία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-028",
+            "premise": "Όταν έμαθε ότι θα φύγω από την ομάδα, έχασε τη γη κάτω από τα πόδια της.",
+            "hypothesis": "Σοκαρίστηκε που θα φύγω από την ομάδα.",
+            "tags": [
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-029",
+            "premise": "Η προθυμία του να αναλάβει το μαγείρεμα του βγήκε ξινή, γιατί κανείς δεν δοκίμασε τα φαγητά του.",
+            "hypothesis": "Τελικά τον χαροποίησε που ανέλαβε να μαγειρέψει.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-030",
+            "premise": "Μου τη δίνει που όλοι είναι κατά του πολέμου αλλά δεν κάνουν τίποτα γι’ αυτό.",
+            "hypothesis": "Είναι ευχάριστο που όλοι είναι κατά του πολέμου.",
+            "tags": [
+                "Lexical Entailment:Redundancy",
+                "Common Sense/Knowledge",
+                "Logic:Quantification:Universal",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-031",
+            "premise": "Όταν μας είδε όλα μαζεμένα στο σπίτι της, έμεινε κόκκαλο.",
+            "hypothesis": "Δεν μας περίμενε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-032",
+            "premise": "Τα πήρε στο κρανίο που δεν βρήκε το ποδήλατό του στο γκαράζ.",
+            "hypothesis": "Δεν τον επηρέασε που το ποδήλατο δεν ήταν εκεί που περίμενε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Multiple Negations",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-033",
+            "premise": "Συναντηθήκαμε όλα στο σπίτι γύρω στις 10 και το σπάσαμε κατά τη μία.",
+            "hypothesis": "Γύρω στη μία αποχωριστήκαμε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-034",
+            "premise": "‘Η νέα ταινία του Λάνθιμου τα σπάει’, μου είπε.",
+            "hypothesis": "Δεν του άρεσε η ταινία του Λάνθιμου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-035",
+            "premise": "Το γκολ του Ολυμπιακού στο τελευταίο λεπτό τον καθυστερήσεων έγραψε ιστορία.",
+            "hypothesis": "Δεν είδα το τελευταίο ματς του Ολυμπιακού.",
+            "tags": [
+                "Lexical Entailment:Redundancy",
+                "Lexical Entailment:Lexical Semantics:Hyponymy",
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-036",
+            "premise": "Όταν έφτασαν στο μπαρ έγινε το έλα να δεις.",
+            "hypothesis": "Υπήρξε αναστάτωση με την έλευσή τους στο μπαρ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-037",
+            "premise": "Το τελευταίο αντίο στην διάσημη μουσικό είπε χθες χιλιάδες κόσμος που παρευρέθηκε στην τελετή.",
+            "hypothesis": "Η διάσημη μουσικός χαίρει άκρας υγείας.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-038",
+            "premise": "Έδωσε ρέστα στη συναυλία χθες με την ενέργειά της.",
+            "hypothesis": "Στη συναυλία υπήρξε χρηματική συναλλαγή.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-039",
+            "premise": "Τον βοήθησα ακούγοντας το πρόβλημά του και μου το ξεπλήρωσε με τη φιλία του.",
+            "hypothesis": "Στη σχέση μας υπήρξε ανταπόδοση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-040",
+            "premise": "Αναστάτωσαν ολόκληρη την πολυκατοικία και πλήρωσα εγώ τα σπασμένα.",
+            "hypothesis": "Επωμίστηκα τις συνέπειες των πράξεων τους.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-041",
+            "premise": "Αναστάτωσαν ολόκληρη την πολυκατοικία και πλήρωσα εγώ τα σπασμένα.",
+            "hypothesis": "Μερικά παράθυρα της πολυκατοικίας έσπασαν.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Meronymy",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-042",
+            "premise": "Αναστάτωσαν ολόκληρη την πολυκατοικία και πλήρωσα εγώ τα σπασμένα.",
+            "hypothesis": "Πλήρωσα ό,τι έσπασαν στην πολυκατοικία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-043",
+            "premise": "Μόλις γύρισα σπίτι το βράδυ ξεράθηκα στον καναπέ.",
+            "hypothesis": "Με πήρε ο ύπνος και στο κρεβάτι.",
+            "tags": [
+                "Lexical Entailment:FAO",
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-044",
+            "premise": "Έφαγα φλασιά τι εννοούσε ώρες μετά που μιλήσαμε.",
+            "hypothesis": "Δεν ξανασκέφτηκα τη συζήτησή μας.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Temporal"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-045",
+            "premise": "Έφαγες τον κόσμο να βρεις τα γυαλιά σου ενώ τα φοράς!",
+            "hypothesis": "Έψαχνες τα γυαλιά ηλίου.",
+            "tags": [
+                "Lexical Entailment:Lexical Semantics:Hypernymy",
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-046",
+            "premise": "Ήξερε το τραγούδι απ’ έξω κι ανακατωτά.",
+            "hypothesis": "Θυμόταν τα λόγια του τραγουδιού.",
+            "tags": [
+                "Lexical Entailment:Lexical Semantics:Meronymy",
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-047",
+            "premise": "Η προηγούμενη κυβέρνηση υπήρξε ανέκαθεν ο αποδιοπομπαίος τράγος τής εκάστοτε κυβέρνησης.",
+            "hypothesis": "Κανείς δεν κατηγόρησε για τίποτα την προηγούμενη κυβέρνηση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-048",
+            "premise": "Ενώ είχαν ανάψει τα αίματα και η συζήτηση γινόταν όλο και πιο δυσάρεστη, ο Τάκης, με την ηρεμία της φωνής του και την επιχειρηματολογία του, έλυσε το πρόβλημα.",
+            "hypothesis": "Δεν υπήρχε ένταση στη συζήτηση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-049",
+            "premise": "Ο μικρός Ηλίας ήπιε το φάρμακο άσπρο πάτο και η μαμά του ήταν περήφανη.",
+            "hypothesis": "Το φάρμακο του Ηλία ήταν άσπρο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy",
+                "Logic:Conjunction"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-050",
+            "premise": "Απείλησε ότι θα πάρει τα βουνά αν συνεχιστεί αυτή η κατάσταση στην εταιρεία.",
+            "hypothesis": "Η κατάσταση στην εταιρεία έχει κουράσει.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Non-Factive",
+                "Logic:Conditionals",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-051",
+            "premise": "Ήθελε να μου κάνει έκπληξη αλλά τον έπιασα στα πράσα όταν ετοίμαζε το τραπέζι.",
+            "hypothesis": "Δεν τον συνάντησα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-052",
+            "premise": "Ήταν κουμπωμένη όλο το βράδυ αλλά κανείς δεν ήξερε γιατί.",
+            "hypothesis": "Φορούσε το παλτό της.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-053",
+            "premise": "Το σχόλιό του έδωσε πάσα στην υπουργό να μιλήσει.",
+            "hypothesis": "Η υπουργός δεν έμεινε σιωπηλή.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-054",
+            "premise": "Το αγόρι ξυλοκοπήθηκε από τους συμμαθητές του.",
+            "hypothesis": "Η σωματική ακεραιότητα του αγοριού δεν κινδύνευσε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-055",
+            "premise": "Η ξύλινη γλώσσα των ΜΜΕ με εκνευρίζει.",
+            "hypothesis": "Τα ΜΜΕ χρησιμοποιούν πολύ συναισθηματική γλώσσα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-056",
+            "premise": "Κοκκίνησαν τα αυτιά του με το αστείο που του έκαναν.",
+            "hypothesis": "Ντράπηκε με αυτό που άκουσε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-057",
+            "premise": "Δεν υπήρχε ψυχή στην εκδήλωση και στενοχωρήθηκε.",
+            "hypothesis": "Ήταν μόνος του στην εκδήλωση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:FAO",
+                "Logic:Single Negation",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Anaphora/Coreference"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-058",
+            "premise": "Δεν υπήρχε ψυχή στην εκδήλωση και στενοχωρήθηκε.",
+            "hypothesis": "Τελικά κατέφθασε πολύς κόσμος.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Temporal",
+                "Logic:Single Negation",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-059",
+            "premise": "Το κορίτσι τής πήρε τον αέρα πολύ γρήγορα με τη χάρη και την εξυπνάδα της.",
+            "hypothesis": "Δεν μπορούσε να αναπνεύσει εξαιτίας του κοριτσιού.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-060",
+            "premise": "Άρχισαν τα ξίδια από νωρίς με την παρέα της για να γιορτάσουν την αποφοίτηση.",
+            "hypothesis": "Δεν γιορτάζουν ποτέ με αλκοόλ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-061",
+            "premise": "Όταν με είδε στο λεωφορείο, μου παραπονέθηκε ότι έκανε μαύρα μάτια να με δει.",
+            "hypothesis": "Είχε να με δει πολύ καιρό.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Non-Factive"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-062",
+            "premise": "Όταν με είδε στο λεωφορείο, μου παραπονέθηκε ότι έκανε μαύρα μάτια να με δει.",
+            "hypothesis": "Δεν είχε να με δει πολύ καιρό.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Non-Factive",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-063",
+            "premise": "‘Έκανε τον άρρωστο να πάει να της φτιάξει καφέ, δεν έχει καθόλου τσίπα!’, είπε ο Μαρίνος.",
+            "hypothesis": "Ο Μαρίνος πιστεύει ότι εκείνη έχει τακτ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Factive",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Predicate-Argument Structure:Core Arguments",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-064",
+            "premise": "Νόμιζα πως 6 χρόνια μαθημάτων θα έφταναν, μα όταν πήγα στην Γαλλία δεν καταλάβαινα γρυ.",
+            "hypothesis": "Για να πας στη Γαλλία πρέπει να κάνεις μαθήματα Γαλλικών.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-065",
+            "premise": "‘Δεν κουνάω ρούπι ό,τι και να πεις!’ φώναξε ο Ορφέας.",
+            "hypothesis": "Ο Ορφέας δεν ξεκουνιόταν με τίποτα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Factive",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-066",
+            "premise": "Έπεσε σύρμα να μην παραπονεθεί κανείς για το φαγητό που έφταιξε ο μικρός αδερφός μου.",
+            "hypothesis": "Δεν είχαμε συνεννοηθεί να μην γκρινιάξει κανείς για το φαγητό.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Multiple Negations",
+                "Logic:Negative Concord",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-067",
+            "premise": "Μετά που τελείωσε το γράψιμο του βιβλίου, έριξε μαύρη πέτρα και στράφηκε στο άλλο πάθος της, την ηθοποιία.",
+            "hypothesis": "Εγκατέλειψε τη συγγραφή.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-068",
+            "premise": "Είναι φαύλος κύκλος να περιθωριοποιείς τους αποφυλακισθέντες και να περιμένεις ότι θα ενταχθούν ομαλά στην κοινωνία.",
+            "hypothesis": "Η περιθωριοποίηση των αποφυλακισθέντων έχει αποτέλεσμα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-069",
+            "premise": "Ήθελε και την πίτα ολόκληρη, και το σκύλο χορτάτο.",
+            "hypothesis": "Ήθελε και να μην δούμε την ταινία που διαλέξαμε και να αλλάξουμε τη μέρα της προβολής.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Logic:Conjunction"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-070",
+            "premise": "Ήθελε και την πίτα ολόκληρη, και το σκύλο χορτάτο.",
+            "hypothesis": "Ζητούσε πολλά.",
+            "tags": [
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-071",
+            "premise": "Γκρεμίστηκε φούρνος και η αλληλογραφία ήρθε στην ώρα της.",
+            "hypothesis": "Η αλληλογραφία δεν υπήρξε ποτέ ασυνεπής.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conjunction",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-072",
+            "premise": "Γκρεμίστηκε φούρνος και η αλληλογραφία ήρθε στην ώρα της.",
+            "hypothesis": "Κάποιος φούρνος γκρεμίστηκε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conjunction",
+                "Logic:Quantification:Existential",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-073",
+            "premise": "Γκρεμίστηκε φούρνος και η αλληλογραφία ήρθε στην ώρα της.",
+            "hypothesis": "Ο φούρνος της γειτονιάς κατεδαφίστηκε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conjunction",
+                "Lexical Entailment:Lexical Semantics:Hypernymy",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-074",
+            "premise": "Τα λόγια της είναι πάντα μετρημένα κουκιά.",
+            "hypothesis": "Μιλάει ακατάπαυστα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-075",
+            "premise": "Κρατούσα το φανάρι στο ζευγαράκι όλο το βράδυ.",
+            "hypothesis": "Δεν είχα κάποια συνοδό.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Quantification:Existential",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-076",
+            "premise": "Με έχει κουράσει ο Κώστας γιατί είναι μη μου άπτου και φοβάμαι να του μιλήσω.",
+            "hypothesis": "Ο Κώστας παρεξηγείται εύκολα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-077",
+            "premise": "Πέταξε τη σκούφια της που θα πάμε εκδρομή.",
+            "hypothesis": "Φορούσε καπέλο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-078",
+            "premise": "Πέταξε τη σκούφια της που θα πάμε εκδρομή.",
+            "hypothesis": "Φορούσε σκούφια.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-079",
+            "premise": "Έμεινα στήλη άλατος με τα νέα, δεν ξέρω πού βρήκαν το θράσος να το κάνουν αυτό.",
+            "hypothesis": "Η πληροφορία που άκουσα δεν με αφορά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-080",
+            "premise": "Αυτό που έμαθα για την Κική και τον Χρήστο με εξέπληξε πολύ.",
+            "hypothesis": "Έμεινα στήλη άλατος με τα νέα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-081",
+            "premise": "Έγινε ένας αχταρμάς η κατάσταση όταν αποφασίσαμε να κάνουμε την κλήρωση.",
+            "hypothesis": "Η κλήρωση διεξήχθη ομαλά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-082",
+            "premise": "Εξέταζε κάθε εναλλακτική άποψη, σαν να ήθελε να καθυστερήσει τη διαδικασία.",
+            "hypothesis": "Έκανε το συνήγορο του διαβόλου, θα έλεγε κανείς.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-083",
+            "premise": "Τα πήρε στο κρανίο λες και έφταιγα εγώ που έχασε την πτήση του.",
+            "hypothesis": "Χτύπησε το κεφάλι του.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Meronymy",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-084",
+            "premise": "Βρέθηκε πίσω απ' τα σίδερα για έγκλημα που δεν διέπραξε.",
+            "hypothesis": "Δεν έχει καταδικαστεί σε φυλάκιση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Temporal"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-085",
+            "premise": "Όλο λέει παραμύθια, παρόλα αυτά ο κόσμος εμπιστεύεται τον γραμματέα της γιατρού.",
+            "hypothesis": "Ο γραμματέας της γιατρού είναι πάντα ειλικρινής.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-086",
+            "premise": "Η απόφαση πάρθηκε ερήμην της προέδρου.",
+            "hypothesis": "Η πρόεδρος συμφώνησε με την απόφαση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-087",
+            "premise": "Η απόφαση πάρθηκε ερήμην της προέδρου.",
+            "hypothesis": "Η πρόεδρος βρισκόταν εκεί.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-088",
+            "premise": "Η αθλήτρια έκανε ό,τι της καπνίσει στους αγώνες, γι' αυτό η προπονήτρια την απέκλεισε.",
+            "hypothesis": "Η αθλήτρια δεν διαπνέεται από ομαδικό πνεύμα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-089",
+            "premise": "Η μικρή μού έβαλε τα γυαλιά με τις ιστορικές της γνώσεις.",
+            "hypothesis": "Δεν έβλεπα καλά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-090",
+            "premise": "Η Ελένη είπε πως ό,τι συνέβη στην εκδρομή είναι περσινά ξινά σταφύλια.",
+            "hypothesis": "Δεν την ενοχλεί πια ό,τι συνέβη.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Logic:Single Negation",
+                "Lexical Entailment:Factivity:Factive"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-091",
+            "premise": "Η αίθουσα είναι άνω κάτω μετά την εκδήλωση.",
+            "hypothesis": "Η εκδήλωση ήταν επιτυχημένη.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-092",
+            "premise": "Με το που τη γνώρισε, δάγκωσε τη λαμαρίνα.",
+            "hypothesis": "Είναι ερωτευμένος μαζί της.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-093",
+            "premise": "Πήρε το μέρος μου, παρόλο που ήξερε πως θα μπλέξει.",
+            "hypothesis": "Με υποστήριξε την κατάλληλη στιγμή.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-094",
+            "premise": "Η αλήθεια είναι πως οι απόψεις μου ήταν λίγο αντιφατικές, οπότε δίκαια με έβαλε στη θέση μου.",
+            "hypothesis": "Δεν αντέδρασε στις απόψεις μου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-095",
+            "premise": "‘Δεν το θεωρώ φιλία αν μου χαϊδεύεις τα αυτιά!’, μου είπε η Νικόλ.",
+            "hypothesis": "Δεν της αρέσει να της ακουμπούν τα αυτιά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Hyponymy",
+                "Lexical Entailment:Factivity:Factive",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments",
+                "Predicate-Argument Structure:Anaphora/Coreference"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-096",
+            "premise": "'Δεν είπα εγώ ότι είναι απρόθυμος, το λεν οι κακές γλώσσες', δήλωσε ο Μάκης.",
+            "hypothesis": "Κάποιοι λένε ότι είναι απρόθυμος.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Factive",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Quantification:Existential"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-097",
+            "premise": "Στην αρχή δεν μιλούσε στις συναντήσεις μας, αλλά με τον καιρό της λύθηκε η γλώσσα.",
+            "hypothesis": "Τώρα μιλάει πιο πολύ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Temporal",
+                "Logic:Comparatives",
+                "Lexical Entailment:Redundancy",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-098",
+            "premise": "Η Χριστίνα έκλεισε τα εισιτήρια για λογαριασμό μου.",
+            "hypothesis": "Πλήρωσα και το εισιτήριο της Χριστίνας.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-099",
+            "premise": "'Δεν έχεις να δώσεις λογαριασμό σε κανέναν, ωστόσο καλύτερα να φέρεσαι σωστά', είπε η Καρολίν στην Ευτέρπη.",
+            "hypothesis": "Η Ευτέρπη πρέπει να λογοδοτήσει για τις πράξεις της.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Factive",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-100",
+            "premise": "Της έδωσα το λόγο μου πως θα φροντίσω εγώ το σκυλάκι της για όσο λείπει.",
+            "hypothesis": "Είναι η πρώτη φορά που της υπόσχομαι κάτι.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-101",
+            "premise": "Της έδωσα το λόγο μου πως θα φροντίσω εγώ το σκυλάκι της για όσο λείπει.",
+            "hypothesis": "Δεν της υποσχέθηκα τίποτα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-102",
+            "premise": "Ήταν τσακωμένοι για καμιά βδομάδα, αλλά τώρα τα βρήκανε.",
+            "hypothesis": "Έχουν πλέον συμφιλιωθεί.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Temporal",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-103",
+            "premise": "Ο δημοσιογράφος έπεσε στα πόδια της ηθοποιού για να λάβει έστω μια σύντομη δήλωση, αλλά εκείνη αρνήθηκε ευγενικά.",
+            "hypothesis": "Τα παρακάλια του δημοσιογράφου δεν είχαν αποτέλεσμα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-104",
+            "premise": "Από χθες αρρώστησα και δεν μπορώ να πάρω τα πόδια μου.",
+            "hypothesis": "Η αρρώστια δεν με έχει καταβάλει.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-105",
+            "premise": "Πάει πολύ να της ζητήσω να με πάει στο αεροδρόμιο στις 5 το πρωί.",
+            "hypothesis": "Θεωρώ καλή ιδέα να της ζητήσω να με πάει στο αεροδρόμιο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-106",
+            "premise": "Τον τρώει το σαράκι που δεν έχει λάβει ούτε ένα μήνυμά του.",
+            "hypothesis": "Τον δάγκωσε κάποιο έντομο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Hypernymy",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-107",
+            "premise": "Μετά τη συναυλία περάσαμε από το κλαμπ του Χαράλαμπου, και το πήγαμε σερί μέχρι το πρωί.",
+            "hypothesis": "Περάσαμε από το σπίτι να ξεκουραστούμε πριν ξημερώσει.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Temporal",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-108",
+            "premise": "Ο Νικόλας ήταν τύπος και υπογραμμός καθ' όλη τη διάρκεια της πτήσης.",
+            "hypothesis": "Ο Νικόλας δεν ενόχλησε κανέναν στην πτήση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-109",
+            "premise": "‘Πλήρωσα τα μαλλιά της κεφαλής μου γι' αυτό το ταξίδι!’, φώναξε η Γωγώ εξοργισμένη στην αεροσυνοδό.",
+            "hypothesis": "Η Γωγώ πλήρωσε για να φτιάξει τα μαλλιά της.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Factive",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-110",
+            "premise": "Είμαστε στα τυφλά για τη συνέχιση του πρότζεκτ, μέχρι να επικοινωνήσει η καθηγήτρια.",
+            "hypothesis": "Ξέρουμε τι να κάνουμε από δω και πέρα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-111",
+            "premise": "Στην αγορά θα βρεις και του πουλιού το γάλα!",
+            "hypothesis": "Στην αγορά σίγουρα υπάρχουν γαλακτοκομικά προϊόντα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:FAO",
+                "Lexical Entailment:Lexical Semantics:Hyponymy",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Quantification:Non-Standard"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-112",
+            "premise": "Στην αγορά θα βρεις και του πουλιού το γάλα!",
+            "hypothesis": "Στην αγορά υπάρχει ποικιλία προϊόντων.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:FAO",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Quantification:Non-Standard"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-113",
+            "premise": "Προσπάθησε να κρατήσει την εγγραφή της στην σχολή μακριά από τον Τύπο, αλλά μαθεύτηκε γρήγορα από στόμα σε στόμα.",
+            "hypothesis": "Τα νέα μεταφέρθηκαν έπειτα από σχετική δημοσίευση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-114",
+            "premise": "Μόλις παρατήρησε ότι ήταν και η Δέσποινα στο πάρτυ, η Βιργινία ήταν όπου φύγει-φύγει.",
+            "hypothesis": "Η Βιργινία βιαζόταν να φύγει.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-115",
+            "premise": "Μόλις παρατήρησε ότι ήταν και η Δέσποινα στο πάρτυ, η Βιργινία ήταν όπου φύγει-φύγει.",
+            "hypothesis": "Η Βιργινία έφυγε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-116",
+            "premise": "Πώς θα πάμε τώρα στο τραπέζι, έτσι που τα κάνατε σαλάτα!",
+            "hypothesis": "Ετοιμάσατε μια σαλάτα για το τραπέζι.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-117",
+            "premise": "Ο Χρήστος τα είχε εντελώς χαμένα κατά τη διάρκεια της ομιλίας, αν και τον ενδιέφερε το θέμα.",
+            "hypothesis": "Ο Χρήστος δεν κατάλαβε και πολλά από την ομιλία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-118",
+            "premise": "Τα βάψαμε μαύρα στο σπίτι όταν η Περσεφόνη έφυγε για την Ολλανδία.",
+            "hypothesis": "Βάψαμε το σπίτι μαύρο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-119",
+            "premise": "Χθες στον κινηματογράφο, στη σκηνή που το φίδι πετάχτηκε στην οθόνη, πήγε η ψυχή μου στην Κούλουρη.",
+            "hypothesis": "Η σκηνή με το φίδι με ξάφνιασε πολύ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-120",
+            "premise": "Η Παρασκευή ήταν εντελώς απηυδισμένη, «Όλα όσα διαβάζω από το πρωί μού φαίνονται κινέζικα, αυτό ήταν, αλλάζω επάγγελμα!», είπε.",
+            "hypothesis": "Η Παρασκευή μαθαίνει κινέζικα και της φαίνονται δύσκολα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-121",
+            "premise": "Όλη η εξαντλητική προπόνηση στο γυμναστήριο μού γύρισε μπούμερανγκ, αφού τραυματίστηκα 5 φορές μέσα σε ένα μήνα.",
+            "hypothesis": "Η απαιτητική προπόνηση δεν είχε συνέπειες.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-122",
+            "premise": "Προσπάθησαν να κρατήσουν χαμηλά τη μουσική στο ρέιβ, αλλά κάποιος γείτονας τους κάρφωσε στην αστυνομία.",
+            "hypothesis": "Ο γείτονας ενημέρωσε την αστυνομία για το ρέιβ πάρτυ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-123",
+            "premise": "Προσπάθησαν να κρατήσουν χαμηλά τη μουσική στο ρέιβ, αλλά κάποιος γείτονας πήρε το 100.",
+            "hypothesis": "Ο γείτονας ενημέρωσε την αστυνομία για το ρέιβ πάρτυ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-124",
+            "premise": "Ο Κωνσταντίνος μάς έκανε το τραπέζι για την θέση που του προσφέρθηκε στο πανεπιστήμιο της Στοκχόλμης.",
+            "hypothesis": "Ο Κωνσταντίνος έστρωσε το τραπέζι.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-125",
+            "premise": "Αύριο βγαίνουν τα αποτελέσματα του διαγωνισμού ποίησης, οπότε η Βιβή κάθεται σ' αναμμένα κάρβουνα.",
+            "hypothesis": "Η Βιβή έχει αγωνία για τα αποτελέσματα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-126",
+            "premise": "Οι εκπαιδευτικοί μόλις τελειώσουν με το πανεπιστήμιο πάνε ξυπόλυτοι στ' αγκάθια, με αυτά που έχουν να αντιμετωπίσουν στην σχολική τάξη.",
+            "hypothesis": "Οι εκπαιδευτικοί είναι πλήρως προετοιμασμένοι να διδάξουν μετά το πανεπιστήμιο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-127",
+            "premise": "'Αν θες να μην χάσεις τον εαυτό σου, μερικές φορές θέλει να είσαι αγύριστο κεφάλι', μου είπε.",
+            "hypothesis": "Μου είπε ότι πρέπει να μάθω να υποχωρώ για να μην χάσω την εαυτή μου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conditionals",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-128",
+            "premise": "Ο δήμαρχος, ο οποίος φαινόταν ισχυρογνώμων, τώρα άγεται και φέρεται από τα συμφέροντα των υφισταμένων του.",
+            "hypothesis": "Οι πράξεις του δημάρχου αντανακλούν συμφέροντα άλλων.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-129",
+            "premise": "Ο δημοσιογράφος έμεινε σιωπηλός από φόβο μη βγουν τα άπλυτά του στη φόρα.",
+            "hypothesis": "Ο δημοσιογράφος δεν πλένει τα ρούχα του.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-130",
+            "premise": "Μόλις ακούστηκε η φράση «υποχρεωτική καραντίνα», πάγωσε το αίμα όλων.",
+            "hypothesis": "Έπεσε η θερμοκρασία τους στο άκουσμα της φράσης.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-131",
+            "premise": "'Τώρα να τα κάνεις αυτά, που βράζει το αίμα σου', υπέδειξε η γιαγιά στον Αντώνη.",
+            "hypothesis": "Ο Αντώνης είναι νέος.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Factivity:Non-Factive"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-132",
+            "premise": "Το συζητήσαμε για περίπου δύο ώρες, αλλά δεν καταλήξαμε σε κάποιο συμπέρασμα.",
+            "hypothesis": "Δεν βγάλαμε κάποια άκρη από τη συζήτηση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-133",
+            "premise": "Όταν ζήτησα βοήθεια για τη λάντζα, ο Άκης έκανε την πάπια.",
+            "hypothesis": "Ο Άκης κάνει καλές μιμήσεις πτηνών.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Hyponymy",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-134",
+            "premise": "Της πέταξα όλες τις βρώμικες κάλτσες που παρατάει κάθε μέρα στο σαλόνι για εκδίκηση.",
+            "hypothesis": "Πήρα το αίμα μου πίσω για την ακαταστασία της.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-135",
+            "premise": "Πρέπει κάποια στιγμή να ανοίξεις τα χαρτιά σου γιατί οι άνθρωποι θα πάψουν να σε εμπιστεύονται.",
+            "hypothesis": "Πρέπει κάποτε να μιλήσεις ανοιχτά για τις προθέσεις σου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-136",
+            "premise": "Έλαβα τόσα θετικά σχόλια για την οργάνωση της έκθεσης που νομίζω βγήκα ασπροπρόσωπη.",
+            "hypothesis": "Δεν κατάφερα να διαχειριστώ την οργάνωση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-137",
+            "premise": "Περιμένουμε να δούμε μια άσπρη μέρα μετά από τόσες ατυχίες!",
+            "hypothesis": "Περιμένουμε να δούμε χιόνι.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-138",
+            "premise": "Με άφησε στο σκοτάδι για τα χρέη του μέχρι που είδα το γράμμα που έλαβε από την τράπεζα.",
+            "hypothesis": "Από την αρχή γνώριζα για την οικονομική του κατάσταση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Temporal",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-139",
+            "premise": "Η Ελευθερία ήθελε να γυρίσει σπίτι αλλά έκανε πίσω στα παρακάλια των παιδιών να σταματήσουν για παγωτό.",
+            "hypothesis": "Η Ελευθερία υποχώρησε στην ιδέα να σταματήσουν για παγωτό.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-140",
+            "premise": "Με το που στολίστηκε το σκηνικό, η Άλκηστις μπήκε στο πνεύμα του ρόλου.",
+            "hypothesis": "Η Άλκηστις έπαιζε το ρόλο της πειστικά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-141",
+            "premise": "Δεν σου προτείνω να δεις τη σειρά, δεν λέει και πολλά.",
+            "hypothesis": "Στη σειρά δεν υπάρχουν πολλοί διάλογοι.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Quantification:Non-Standard",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-142",
+            "premise": "Το τι πιστεύουν οι άλλοι για την πρόοδό σου είναι τρίχες, σημασία έχει αν εσύ είσαι χαρούμενη με αυτήν.",
+            "hypothesis": "Έχει σημασία η γνώμη των άλλων για την πορεία σου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Core Arguments",
+                "Predicate-Argument Structure:Anaphora/Coreference"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-143",
+            "premise": "Από όταν πέθανε ο κύριος του σπιτιού, οι κληρονόμοι άφησαν το μέγαρο στην τύχη του.",
+            "hypothesis": "Οι κληρονόμοι δεν φρόντισαν το μέγαρο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-144",
+            "premise": "Η δήλωση της μετακόμισής του στην Αυστραλία με έπιασε στον ύπνο.",
+            "hypothesis": "Κοιμόμουν όταν ήρθε και μου είπε ότι θα πάει στην Αυστραλία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-145",
+            "premise": "Η δήλωση της μετακόμισής του στην Αυστραλία με έπιασε στον ύπνο.",
+            "hypothesis": "Δεν ξαφνιάστηκα που θα φύγει στην Αυστραλία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Single Negation",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-146",
+            "premise": "Πέρασαν στην επόμενη φάση τον νέο τραγουδιστή, γιατί ο μεγαλύτερος ήταν ήδη φτασμένος.",
+            "hypothesis": "Ο μεγαλύτερος τραγουδιστής είχε ήδη φτάσει σε αναγνώριση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-147",
+            "premise": "Η αδερφή του ήταν και θα είναι πάντα το δεξί του χέρι.",
+            "hypothesis": "Η αδερφή του είναι δεξιόχειρας.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Conjunction"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-148",
+            "premise": "Δεν είναι στο χέρι μου αν θα είναι επιτυχημένο το βιβλίο ή όχι.",
+            "hypothesis": "Δεν είμαι εγώ υπεύθυνη για την επιτυχία του βιβλίου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Single Negation",
+                "Logic:Conditionals",
+                "Logic:Disjunction"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-149",
+            "premise": "Δεν άκουσε λέξη από όσα τον συμβούλεψα τις προάλλες.",
+            "hypothesis": "Άκουσε μερικές από τις λέξεις που είπα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Quantification:Non-Standard",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-150",
+            "premise": "Δεν άκουσε λέξη από όσα τον συμβούλεψα τις προάλλες.",
+            "hypothesis": "Έπραξε με βάση τις συμβουλές που του έδωσα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Quantification:Non-Standard",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-151",
+            "premise": "Έχω βάλει πολύ νερό στο κρασί μου και είμαι πιο μαλακή απέναντί του.",
+            "hypothesis": "Πίνω νερωμένο κρασί.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-152",
+            "premise": "Έχω βάλει πολύ νερό στο κρασί μου και είμαι πιο μαλακή απέναντί του.",
+            "hypothesis": "Δεν έχω κάνει καμία υποχώρηση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-153",
+            "premise": "Της βγάζω το καπέλο για όσα κατάφερε μέσα σε ένα χρόνο.",
+            "hypothesis": "Την θαυμάζω για όσα πέτυχε αυτή τη χρονιά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Anaphora/Coreference"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-154",
+            "premise": "Ο Παναγιώτης τα έβαλε μαζί μου, λες και εγώ ήμουν υπεύθυνη που καθυστερήσαμε να φύγουμε.",
+            "hypothesis": "Ο Παναγιώτης δεν κατηγόρησε κανέναν.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-155",
+            "premise": "Κατά βάθος ξέρω πως, όταν έρθει η ώρα, όποια απόφαση και να πάρουμε θα είναι η σωστή.",
+            "hypothesis": "Είναι προφανές πως θα πάρουμε την σωστή απόφαση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-156",
+            "premise": "Κατά βάθος ξέρω πως, όταν έρθει η ώρα, όποια απόφαση και να πάρουμε θα είναι η σωστή.",
+            "hypothesis": "Η γνώση μου έχει βάθος.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-157",
+            "premise": "Με βαριά καρδιά πήγε ο Πυθαγόρας να πάρει καρότα και ντομάτες από το σούπερ μάρκετ.",
+            "hypothesis": "Ο Πυθαγόρας δεν πήγε πρόθυμα στο σούπερ μάρκετ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-158",
+            "premise": "Το βιβλίο για την κλιματική αλλαγή μού έπεσε βαρύ.",
+            "hypothesis": "Το βαρύ βιβλίο έπεσε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-159",
+            "premise": "Το βιβλίο για την κλιματική αλλαγή μού έπεσε βαρύ.",
+            "hypothesis": "Έφαγα το βιβλίο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-160",
+            "premise": "Έδωσα βάση στην προτεινόμενη βιβλιογραφία, γιατί δεν είχα βρει άλλες πηγές.",
+            "hypothesis": "Δεν διάβασα την προτεινόμενη βιβλιογραφία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-161",
+            "premise": "Μία μέρα πέρασε ο Βασίλης με τη μικρή Ευτυχία και εκείνη του έβγαλε το λάδι με την διαρκή της υπερένταση.",
+            "hypothesis": "Ο Βασίλης κουράστηκε από τη μικρή Ευτυχία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Predicate-Argument Structure:Alternations"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-162",
+            "premise": "'Είμαι βαμμένος Ολυμπιακός' είπε περήφανα όταν με γνώρισε.",
+            "hypothesis": "Είχε βαφτεί στα χρώματα της ομάδας.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-163",
+            "premise": "Οι αγρότες τα βγάζουν πέρα δύσκολα με τις περικοπές των επιδοτήσεων.",
+            "hypothesis": "Οι αγρότες ζουν πολυτελώς.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-164",
+            "premise": "Οι αγρότες τα βγάζουν πέρα δύσκολα με τις περικοπές των επιδοτήσεων.",
+            "hypothesis": "Όλοι οι αγρότες δυσκολεύονται οικονομικά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Quantification:Universal",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-165",
+            "premise": "Ο νέος υπάλληλος δεν μου γεμίζει το μάτι, ένα μήνα είναι στην εταιρεία και δεν έχει δείξει κανένα σημάδι της δουλειάς του.",
+            "hypothesis": "Δεν εμπιστεύομαι τον καινούργιο υπάλληλο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Single Negation",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-166",
+            "premise": "Η Κατερίνα δεν βλέπει την ώρα να πάει για Πρωτοχρονιά στην Κρακοβία.",
+            "hypothesis": "Το ταξίδι στην Κρακοβία είναι αδιάφορο στην Κατερίνα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-167",
+            "premise": "Από όταν έφυγε ο Κωστής από την πινακοθήκη, η διαχείριση πήρε την κάτω βόλτα.",
+            "hypothesis": "Η ομάδα διαχείρισης πήγε βόλτα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Meronymy",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-168",
+            "premise": "Πρέπει να εκτελέσεις τα βήματα κατά γράμμα, αν θες να εγκαθιστήσεις το νέο λογισμικό.",
+            "hypothesis": "Είναι σημαντικό να ακολουθήσεις προσεκτικά τις οδηγίες.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-169",
+            "premise": "'Οι επιβάτες πρέπει να φτάσουν στον προορισμό τους με ασφάλεια, όλα τα άλλα είναι ψιλά γράμματα', είπε ο πιλότος.",
+            "hypothesis": "Ο πιλότος θεωρεί πως το μόνο που έχει σημασία είναι η ασφάλεια των επιβατών.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-170",
+            "premise": "Από μικρή έπαιζε στα δάχτυλα την Άλγεβρα, και τώρα είναι μηχανικός.",
+            "hypothesis": "Η Άλγεβρα την δυσκόλεψε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-171",
+            "premise": "Η μάνα μου ούτε κατά διάνοια δεν θα με άφηνε να βγω έξω χωρίς μπουφάν.",
+            "hypothesis": "Μπορούσα να διαπραγματευτώ με τη μάνα μου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-172",
+            "premise": "Μου αρέσει ο χαρακτήρας της Αλκυόνης γιατί τα λέει όλα έξω από τα δόντια.",
+            "hypothesis": "Η Αλκυόνη δεν διστάζει να πει τι πιστεύει.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-173",
+            "premise": "Έπεσα έξω για την πλοκή της ταινίας, αλλά κανείς δεν φάνηκε να δυσαρεστείται έτσι κι αλλιώς.",
+            "hypothesis": "Περίμενα την υπόθεση κάπως διαφορετική.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-174",
+            "premise": "Μόλις μπήκα στην κουζίνα της γιαγιάς έσπασε η μύτη μου από τις μυρωδιές.",
+            "hypothesis": "Η κουζίνα μύριζε όμορφα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-175",
+            "premise": "Η Πολυχρονία έκανε χώρο για να κάτσει η κυρία, που εμφανώς είναι στον μήνα της.",
+            "hypothesis": "Η κυρία δεν είναι έγκυος.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Contradiction",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-176",
+            "premise": "Η Πολυχρονία έκανε χώρο για να κάτσει η κυρία, που εμφανώς είναι στον μήνα της.",
+            "hypothesis": "Η Πολυχρονία είναι έγκυος.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-177",
+            "premise": "Προσπαθήσαμε να κόψουμε δρόμο γιατί ήμασταν κουρασμένες και είχε πέσει το σκοτάδι.",
+            "hypothesis": "Προσπαθήσαμε να πάρουμε έναν πιο σύντομο δρόμο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Comparatives"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-178",
+            "premise": "Ο κατηγορούμενος ένιωθε ότι μιλούσε στον τοίχο κατά την απολογία του.",
+            "hypothesis": "Ο κατηγορούμενος δεν ένιωθε να τον ακούν.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-179",
+            "premise": "Στο λεωφορείο δεν έπεφτε καρφίτσα την παραμονή των Χριστουγέννων.",
+            "hypothesis": "Καμιά καρφίτσα δεν έπεσε στο λεωφορείο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-180",
+            "premise": "Στο λεωφορείο δεν έπεφτε καρφίτσα την παραμονή των Χριστουγέννων.",
+            "hypothesis": "Το λεωφορείο ήταν γεμάτο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-181",
+            "premise": "Το ξέρουν και οι πέτρες πως αν η Ιουλία πάει στην Ελβετία, ο Παντελής θα την ακολουθήσει.",
+            "hypothesis": "Είναι ευκόλως εννοούμενο πως ο Παντελής θα ακολουθήσει την Ιουλία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conditionals"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-182",
+            "premise": "Έπεσε στα μάτια μου όταν άκουσα πώς διαχειρίστηκε την ασθένεια της αδερφής του.",
+            "hypothesis": "Τον θαυμάζω για την διαχείρισή του.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-183",
+            "premise": "Τα παιδιά αυτής της τάξης είναι φωτεινοί παντογνώστες και εξέπληξαν τους υπαλλήλους του μουσείου.",
+            "hypothesis": "Τα παιδιά έλαμπαν στο μουσείο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Meronymy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-184",
+            "premise": "Τα περνούσε ζάχαρη μόνος του στην καλύβα δίπλα στο λιβάδι.",
+            "hypothesis": "Έτρωγε γλυκά στην καλύβα.",
+            "tags": [
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-185",
+            "premise": "Δεν με εξέπληξε που σταμάτησε ο Γιώργος να μιλάει στον Θοδωρή, γιατί προκαλούσε πολύ με την συμπεριφορά του.",
+            "hypothesis": "Ο Θοδωρής πήγαινε γυρεύοντας.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-186",
+            "premise": "Έχυσε κροκοδείλια δάκρυα στην κηδεία του Μανώλη, και το ξέρουν όλοι.",
+            "hypothesis": "Λυπήθηκε πραγματικά για το χαμό του Μανώλη.",
+            "tags": [
+                "Common Sense/Knowledge"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-187",
+            "premise": "Η ζωή στη Σουηδία δεν είναι εύκολη το χειμώνα, αλλά τα φέρνω βόλτα.",
+            "hypothesis": "Το χειμώνα στη Σουηδία πηγαίνω βόλτες.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-188",
+            "premise": "Δεν πήρα χαμπάρι ότι ήταν λυπημένη, αλλιώς θα είχα πάει να της κάνω παρέα.",
+            "hypothesis": "Δεν αντιλήφθηκα τη λύπη της.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-189",
+            "premise": "Σήμερα δεν κουνιέται φύλλο, κρίμα είναι να χάσετε το μπάνιο στη θάλασσα.",
+            "hypothesis": "Φυσάει κι ας έχει ήλιο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-190",
+            "premise": "Καβάλησε το καλάμι όταν του παραχώρησαν τον τίτλο του υποδιευθυντή και ήθελε να έχει άποψη για όλα.",
+            "hypothesis": "Ως νέος υποδιευθυντής, καθόταν πάνω σε ένα καλάμι.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-191",
+            "premise": "Ο υπουργός έχτιζε πύργους στην άμμο, ενώ η εκπαίδευση κατέρρεε.",
+            "hypothesis": "Ο υπουργός βρισκόταν στην παραλία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Lexical Semantics:Meronymy",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-192",
+            "premise": "Δεν μπορούσε να με στήσει στο σταθμό και να ήθελε, γιατί θα έφευγε το τρένο.",
+            "hypothesis": "Δεν είχε περιθώρια να καθυστερήσει.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-193",
+            "premise": "Το πουλόβερ που έχωσα στην τσάντα μου έπιασε τόπο με τόσο κρύο.",
+            "hypothesis": "Το πουλόβερ ήταν αχρείαστο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-194",
+            "premise": "Ο Παύλος έσκισε στην οντισιόν για τη χορευτική ομάδα.",
+            "hypothesis": "Ο Παύλος δεν χόρεψε καλά στην οντισιόν.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-195",
+            "premise": "Καθώς η συγγραφέας διάβαζε ένα απόσπασμα από το βιβλίο της, όλοι κρέμονταν από τα χείλη της.",
+            "hypothesis": "Όλοι άκουγαν την συγγραφέα με προσοχή.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Anaphora/Coreference",
+                "Logic:Quantification:Universal",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-196",
+            "premise": "Η Έλλη είναι σε φόρμα τώρα που πηγαίνει για αναρρίχηση κάθε βδομάδα.",
+            "hypothesis": "Η Έλλη φοράει φόρμες στην αναρρίχηση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-197",
+            "premise": "Κάθε μέρα η Αναστασία γυρνά από το δικαστήριο και μου διηγείται χαρτί και καλαμάρι τις υποθέσεις.",
+            "hypothesis": "Οι διηγήσεις της Αναστασίας δεν είναι λεπτομερείς.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-198",
+            "premise": "Τα ακουστικά μου από χθες έχουν κάνει φτερά.",
+            "hypothesis": "Δεν μπορώ να βρω πουθενά τα ακουστικά μου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Predicate-Argument Structure:Core Arguments"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-199",
+            "premise": "Τα ακουστικά μου από χθες έχουν κάνει φτερά.",
+            "hypothesis": "Τα ακουστικά μου έμαθαν να πετούν.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-200",
+            "premise": "Δεν έπρεπε να θίξει το θέμα της πολιτικής, γιατί σχεδόν πιαστήκαμε στα χέρια.",
+            "hypothesis": "Τσακωθήκαμε έντονα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-201",
+            "premise": "'Τώρα που ο Γιάννης θα γίνει υπότροφος, θα τρώει με χρυσά κουτάλια', είπε η Μαρίκα.",
+            "hypothesis": "Ο Γιάννης δεν θα τρώει με ασημένια κουτάλια.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:FAO",
+                "Logic:Single Negation",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-202",
+            "premise": "'Τώρα που ο Γιάννης θα γίνει υπότροφος, θα τρώει με χρυσά κουτάλια', είπε η Μαρίκα.",
+            "hypothesis": "Ο Γιάννης έχει χρυσά κουτάλια.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-203",
+            "premise": "Μπήκε κατευθείαν στο ψητό και μου εξήγησε τι συνέβη προχθές στο αεροδρόμιο.",
+            "hypothesis": "Όταν μιλήσαμε έτρωγε κρέας ψητό.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-204",
+            "premise": "'Χλωμό το βλέπω πως θα έχω χρόνο την άλλη βδομάδα να πιούμε καφέ', είπε λυπημένα.",
+            "hypothesis": "Θεωρεί πως θα έχει χρόνο την άλλη βδομάδα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-205",
+            "premise": "Η τηλεφωνική υπηρεσία της επώνυμης αεροπορικής εταιρείας είναι λίγο της υπομονής.",
+            "hypothesis": "Η εξυπηρέτηση της εταιρείας μέσω τηλεφώνου είναι γρήγορη.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Lexical Semantics:Meronymy",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-206",
+            "premise": "Μου διαφεύγει το όνομα του τραγουδιστή της συναυλίας που άκουσε η Μαρία προχθές.",
+            "hypothesis": "Θυμάμαι πώς λένε τον τραγουδιστή της προχθεσινής συναυλίας.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-207",
+            "premise": "Είχε συμφωνήσει με την Αλεξία να συναντηθούμε στις πέντε, αλλά ξέρω πως της αρέσει να κάνει το δικό της.",
+            "hypothesis": "Η Αλεξία φτιάχνει δικά της πράγματα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy",
+                "Predicate-Argument Structure:Anaphora/Coreference"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-208",
+            "premise": "Έδωσα ό,τι είχα και δεν είχα για να πάρω αυτό το σπίτι.",
+            "hypothesis": "Έδωσα ό,τι δεν είχα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conjunction",
+                "Logic:Single Negation",
+                "Logic:Quantification:Non-Standard"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-209",
+            "premise": "Παρουσίασα στην ομάδα την ιδέα μου για το πρόγραμμα της εβδομάδας, αλλά κανείς δεν την πήρε ζεστά.",
+            "hypothesis": "Κανείς δεν ήταν ενθουσιασμένος με την ιδέα μου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Negative Concord",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-210",
+            "premise": "Αν ο πληθωρισμός συνεχίσει να ανεβαίνει σε αυτό το βαθμό, φοβάμαι πως σύντομα δεν θα έχουμε στον ήλιο μοίρα.",
+            "hypothesis": "Ο πληθωρισμός δεν θα επηρεάσει τα οικονομικά μας.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Conditionals",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-211",
+            "premise": "Αν και αποφάσισα ότι θέλω να πάω μαζί τους στην Ισπανία, τώρα πέταξε το πουλί.",
+            "hypothesis": "Ακόμη έχω περιθώριο να κλείσω για Ισπανία.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-212",
+            "premise": "Πρέπει να φύγω αλλά σε αφήνω σε καλά χέρια, ο Γιώργος έρχεται σε λίγο.",
+            "hypothesis": "Ο Γιώργος είναι έμπιστο άτομο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-213",
+            "premise": "Η Ελένη ήθελε σώνει και καλά να περνάει από το βιβλιοπωλείο κάθε μέρα μετά το σχολείο.",
+            "hypothesis": "Η Ελένη δεν θεωρούσε το πέρασμα από το βιβλιοπωλείο απαραίτητο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Logic:Single Negation"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-214",
+            "premise": "Σε αυτές τις διακοπές θα διαβάσω πάση θυσία, εκτός των υπόλοιπων δραστηριοτήτων.",
+            "hypothesis": "Εκτός των άλλων, απαραίτητα θα διαβάσω.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-215",
+            "premise": "Ο Ερμής είχε αγχωθεί υπερβολικά για το ταξίδι, αλλά η συζήτηση με τον Ανάργυρο τον έφερε στα ίσια του.",
+            "hypothesis": "Ο Ερμής καμπούριαζε πριν τη συζήτηση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-216",
+            "premise": "Η πόλη δεν είναι πλέον ασφαλής, κάθε λίγο και λιγάκι ακούμε για μια νέα απόπειρα δολοφονίας.",
+            "hypothesis": "Δεν ακούμε συχνά για νέες απόπειρες.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-217",
+            "premise": "Την επομένη της Πρωτοχρονιάς, με το καλημέρα αρχίσαμε το συμμάζεμα του σπιτιού.",
+            "hypothesis": "Είπαμε «καλημέρα» και αρχίσαμε να μαζεύουμε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-218",
+            "premise": "Η ακαδημία χορού δεν είναι παίξε γέλασε, αν θέλεις να ανταπεξέλθεις πρέπει να στρωθείς στη δουλειά.",
+            "hypothesis": "Η ακαδημία χορού δεν έχει χιούμορ.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-219",
+            "premise": "Η Βάσω δεν του κράτησε κακία αν και, εκεί που έπαιζαν, την έσπρωξε από την κούνια.",
+            "hypothesis": "Η Βάσω κρατούσε κάτι.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-220",
+            "premise": "Κάτσαμε να τελειώσουμε το βάψιμο του τοίχου μια και καλή χθες το απόγευμα.",
+            "hypothesis": "Θέλαμε να τελειώσουμε μέσα σε ένα απόγευμα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-221",
+            "premise": "Μετά τις μαζικές διαδηλώσεις εναντίον του, ο Υπουργός δήλωσε την παραίτησή του και έγινε καπνός.",
+            "hypothesis": "Ο Υπουργός εξαϋλώθηκε.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-222",
+            "premise": "Γέλασε με την καρδιά της όταν της είπα για το συμβάν στην καφετέρια το πρωί.",
+            "hypothesis": "Δεν γέλασε πολύ με τη διήγηση του συμβάντος.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-223",
+            "premise": "'Όταν γυρνάς, έχε κατά νου να πάρεις ένα ψωμί από το φούρνο', μου είπε η Παναγιώτα.",
+            "hypothesis": "Η Παναγιώτα ήθελε να θυμηθώ να περάσω από το φούρνο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-224",
+            "premise": "Δεν μου καίγεται καρφί αν χάσει η εθνική ομάδα στον αγώνα της Παρασκευής.",
+            "hypothesis": "Κάποιο καρφί δεν καίγεται.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Quantification:Existential"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-225",
+            "premise": "'Περιμένουμε πάνω-κάτω 200.000 επισκέπτες τη φετινή χρονιά', είπε περήφανα ο υπεύθυνος του ξενοδοχείου.",
+            "hypothesis": "Αναμένονται 200.000 επισκέπτες στον πάνω και στον κάτω όροφο του ξενοδοχείου.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Predicate-Argument Structure:Core Arguments",
+                "Lexical Entailment:Factivity:Factive",
+                "Lexical Entailment:Lexical Semantics:Meronymy",
+                "Lexical Entailment:Morphological Modification"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-226",
+            "premise": "Οι πολίτες κρατούν μικρό καλάθι ως προς τις δηλώσεις του νέου προέδρου του υποψήφιου κόμματος.",
+            "hypothesis": "Οι πολίτες δεν έχουν υψηλές προσδοκίες από τον νέο πρόεδρο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Lexical Semantics:Meronymy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-227",
+            "premise": "Δεν έκλεισα μάτι από των ήχο των βροντών χθες το βράδυ στο εξοχικό.",
+            "hypothesis": "Χθες το βράδυ κοιμήθηκα καλά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "idiom-228",
+            "premise": "Μου ήρθε κουτί που προσφέρθηκες να μαγειρέψεις, γιατί δεν είχα καθόλου χρόνο.",
+            "hypothesis": "Με βόλεψε που μαγείρεψες.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-229",
+            "premise": "Μου ήρθε κουτί που προσφέρθηκες να μαγειρέψεις, γιατί δεν είχα καθόλου χρόνο.",
+            "hypothesis": "Με βόλεψε που πρότεινες να μαγειρέψεις.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-230",
+            "premise": "'Δεν κρατιέμαι να τελειώσω τις σπουδές μου και να αρχίσω να δουλεύω', είπε νευριασμένη.",
+            "hypothesis": "Βιάζεται να ξεκινήσει δουλειά.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Factivity:Factive"
+            ],
+            "labels": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "idiom-231",
+            "premise": "Η εργοδότρια έκανε τα στραβά μάτια όλες τις φορές που ο υπάλληλος γέμιζε παραπάνω την τσάντα μου με ψωμί, γιατί ήξερε ότι το είχα ανάγκη.",
+            "hypothesis": "Η εργοδότρια κοιτούσε στραβά τον υπάλληλο.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Lexical Entailment:Morphological Modification",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-232",
+            "premise": "Δεν μπορούμε να συνεννοηθούμε γιατί βρισκόμαστε σε άλλο εντελώς μήκος κύματος.",
+            "hypothesis": "Μιλάμε σε διαφορετική συχνότητα.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Entailment",
+                "Unknown"
+            ]
+        },
+        {
+            "id": "idiom-233",
+            "premise": "Αφού τα έκανε πλακάκια με τη διευθύντρια, σταμάτησε να δίνει σημασία στους άλλους υπαλλήλους και πάντα αργεί στη δουλειά.",
+            "hypothesis": "Δεν έχει καλή σχέση με τη διεύθυνση.",
+            "tags": [
+                "Common Sense/Knowledge",
+                "Logic:Single Negation",
+                "Logic:Conjunction",
+                "Lexical Entailment:Redundancy"
+            ],
+            "labels": [
+                "Contradiction"
+            ]
+        }
+    ]
+}

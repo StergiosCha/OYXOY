@@ -2,6 +2,9 @@
 
 The novel data are contained in json format within `gold.json`.
 The FraCaS-adaped data are contained within `FraCaS.json`.
+The idioms subset is contained within `idioms.json` (232 pairs, created and annotated by Christina Klironomou).
+Each pair is built around a Modern Greek idiom, and the labels account for both its idiomatic and its literal reading.
+It uses the same format and loads with the same interface (`Dataset.from_json`).
 Each sample contains a premise, a hypothesis, a non-empty set of relevant linguistic tags and a non-empty set of possible inference labels.
 For FraCaS, the hypothesis can consist of multiple sentences.
 For an explanation of the tags used, refer to `tags.py`.
